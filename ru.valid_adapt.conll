@@ -1,0 +1,4014 @@
+# id: valid_202
+# text EN: Will it be snowy at the current position by March 3 ? 
+# text RU: Будет ли снег в текущем местоположении 3 марта ?
+# intent: weather/find
+# slots: 10:13:condition_description, 17:38:location, 40:46:datetime
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	снег	weather/find	B-condition_description
+4	в	weather/find	O
+5	текущем	weather/find	B-location
+6	местоположении	weather/find	I-location
+7	3	weather/find	B-datetime
+8	марта	weather/find	I-datetime
+9	?	weather/find	O
+
+# id: valid_203
+# text EN: Find me a table for 8 somewhere in Moscow in nine weeks 
+# text RU: Найди мне столик для 8, где-нибудь в Москве через девять недель
+# intent: BookRestaurant
+# slots: 22:22:party_size_number, 38:43:location, 45:63:datetime
+1	Найди	BookRestaurant	O
+2	мне	BookRestaurant	O
+3	столик	BookRestaurant	O
+4	для	BookRestaurant	O
+5	8	BookRestaurant	B-party_size_number
+6	,	BookRestaurant	O
+7	где-нибудь	BookRestaurant	O
+8	в	BookRestaurant	O
+9	Москве	BookRestaurant	B-location
+10	через	BookRestaurant	B-datetime
+11	девять	BookRestaurant	I-datetime
+12	недель	BookRestaurant	I-datetime
+
+# id: valid_204
+# text EN: play a track from 2004 
+# text RU: включи трек из 2004
+# intent: PlayMusic
+# slots: 8:11:music_item, 16:19:datetime
+1	включи	PlayMusic	O
+2	трек	PlayMusic	B-music_item
+3	из	PlayMusic	O
+4	2004	PlayMusic	B-datetime
+
+# id: valid_205
+# text EN: Tell me what films are currently playing at CARO 7 Atrium 
+# text RU: Скажи мне, какие фильмы сейчас показывают в КАРО 7 Атриум
+# intent: SearchScreeningEvent
+# slots: 18:23:movie_type, 45:57:location
+1	Скажи	SearchScreeningEvent	O
+2	мне	SearchScreeningEvent	O
+3	,	SearchScreeningEvent	O
+4	какие	SearchScreeningEvent	O
+5	фильмы	SearchScreeningEvent	B-movie_type
+6	сейчас	SearchScreeningEvent	O
+7	показывают	SearchScreeningEvent	O
+8	в	SearchScreeningEvent	O
+9	КАРО	SearchScreeningEvent	B-location
+10	7	SearchScreeningEvent	I-location
+10	Атриум	SearchScreeningEvent	I-location
+
+# id: valid_206
+# text EN: Show me the TV show Let's get married 
+# text RU: Покажи мне телешоу Давай поженимся
+# intent: SearchCreativeWork
+# slots: 12:18:object_type, 20:34:object_name
+1	Покажи	SearchCreativeWork	O
+2	мне	SearchCreativeWork	O
+3	телешоу	SearchCreativeWork	B-object_type
+4	Давай	SearchCreativeWork	B-object_name
+5	поженимся	SearchCreativeWork	I-object_name
+
+# id: valid_207
+# text EN: Show me the photograph If I Were а Sultan 
+# text RU: Покажи мне фотографию Если Б Я Был Султан
+# intent: SearchCreativeWork
+# slots: 12:21:object_type, 23:41:object_name
+1	Покажи	SearchCreativeWork	O
+2	мне	SearchCreativeWork	O
+3	фотографию	SearchCreativeWork	B-object_type
+4	Если	SearchCreativeWork	B-object_name
+5	Б	SearchCreativeWork	I-object_name
+6	Я	SearchCreativeWork	I-object_name
+7	Был	SearchCreativeWork	I-object_name
+8	Султан	SearchCreativeWork	I-object_name
+
+# id: valid_208
+# text EN: is Anora playing at CARO 7 Atrium 
+# text RU: идёт ли Анора в КАРО 7 Атриум
+# intent: SearchScreeningEvent
+# slots: 9:13:movie_name, 17:29:location
+1	идёт	SearchScreeningEvent	O
+2	ли	SearchScreeningEvent	O
+3	Анора	SearchScreeningEvent	B-movie_name
+4	в	SearchScreeningEvent	O
+5	КАРО	SearchScreeningEvent	B-location
+6	7	SearchScreeningEvent	I-location
+7	Атриум	SearchScreeningEvent	I-location
+
+# id: valid_209
+# text EN: put Kan Mikami on Russian pop 
+# text RU: добавь Егора Крида в Русскую попсу
+# intent: AddToPlaylist
+# slots: 8:18:artist, 22:34:playlist
+1	добавь	AddToPlaylist	O
+2	Егора	AddToPlaylist	B-artist
+3	Крида	AddToPlaylist	I-artist
+4	в	AddToPlaylist	O
+5	Русскую	AddToPlaylist	B-playlist
+6	попсу	AddToPlaylist	I-playlist
+
+# id: valid_210
+# text EN: is it going to blizzard at my current position 
+# text RU: будет ли метель в моем текущем местоположении
+# intent: weather/find
+# slots: 10:15:condition_description, 24:45:location
+1	будет	weather/find	O
+2	ли	weather/find	O
+3	метель	weather/find	B-condition_description
+4	в	weather/find	O
+5	моем	weather/find	O
+6	текущем	weather/find	B-location
+7	местоположении	weather/find	I-location
+
+# id: valid_211
+# text EN: book a table for me and my step uncle in Magadan at a cafeteria 
+# text RU: забронируй столик для меня и моего двоюродного дяди в Магадане в кафетерии
+# intent: BookRestaurant
+# slots: 23:51:party_size_description, 55:62:location, 66:74:restaurant_type
+1	забронируй	BookRestaurant	O
+2	столик	BookRestaurant	O
+3	для	BookRestaurant	O
+4	меня	BookRestaurant	B-party_size_description
+5	и	BookRestaurant	I-party_size_description
+6	моего	BookRestaurant	I-party_size_description
+7	двоюродного	BookRestaurant	I-party_size_description
+8	дяди	BookRestaurant	I-party_size_description
+9	в	BookRestaurant	O
+10	Магадане	BookRestaurant	B-location
+11	в	BookRestaurant	O
+12	кафетерии	BookRestaurant	B-restaurant_type
+
+# id: valid_212
+# text EN: Play the most popular twenties record from Vadim Kozin 
+# text RU: Включи самую популярную запись двадцатых годов от Вадима Козина
+# intent: PlayMusic
+# slots: 8:23:sort, 25:30:music_item, 32:46:datetime, 51:63:artist
+1	Включи	PlayMusic	O
+2	самую	PlayMusic	B-sort
+3	популярную	PlayMusic	I-sort
+4	запись	PlayMusic	B-music_item
+5	двадцатых	PlayMusic	B-datetime
+6	годов	PlayMusic	I-datetime
+7	от	PlayMusic	O
+8	Вадима	PlayMusic	B-artist
+9	Козина	PlayMusic	I-artist
+
+# id: valid_213
+# text EN: Show me the forecast for St.Petersburg 
+# text RU: Покажи мне прогноз для Петербурга
+# intent: weather/find
+# slots: 24:33:location
+1	Покажи	weather/find	O
+2	мне	weather/find	O
+3	прогноз	weather/find	O
+4	для	weather/find	O
+5	Петербурга	weather/find	B-location
+
+# id: valid_214
+# text EN: find a photograph called Raising a Flag over the Reichstag 
+# text RU: найди фотографию названную Флаг над Рейхстагом
+# intent: SearchCreativeWork
+# slots: 7:16:object_type, 28:46:object_name
+1	найди	SearchCreativeWork	O
+2	фотографию	SearchCreativeWork	B-object_type
+3	названную	SearchCreativeWork	O
+4	Флаг	SearchCreativeWork	B-object_name
+5	над	SearchCreativeWork	I-object_name
+6	Рейхстагом	SearchCreativeWork	I-object_name
+
+# id: valid_215
+# text EN: book at Karl and Friedrich on Oct. 17 
+# text RU: забронируй Карл и Фридрих на 17 октября
+# intent: BookRestaurant
+# slots: 12:25:restaurant_name, 30:39:datetime
+1	забронируй	BookRestaurant	O
+2	Карл	BookRestaurant	B-restaurant_name
+3	и	BookRestaurant	I-restaurant_name
+4	Фридрих	BookRestaurant	I-restaurant_name
+5	на	BookRestaurant	O
+6	17	BookRestaurant	B-datetime
+7	октября	BookRestaurant	I-datetime
+
+# id: valid_216
+# text EN: Please tell me the forecast for Makhachkala 
+# text RU: Пожалуйста, скажи мне прогноз для Махачкалы 
+# intent: weather/find
+# slots: 35:43:location
+1	Пожалуйста	weather/find	O
+2	,	weather/find	O
+3	скажи	weather/find	O
+4	мне	weather/find	O
+5	прогноз	weather/find	O
+6	для	weather/find	O
+7	Махачкалы	weather/find	B-location
+
+# id: valid_217
+# text EN: Add this song to my The Flying Ship playlist 
+# text RU: Добавь эту песню в мой плейлист Летучий корабль 
+# intent: AddToPlaylist
+# slots: 12:16:music_item, 20:22:reference, 33:47:playlist
+1	Добавь	AddToPlaylist	O
+2	эту	AddToPlaylist	O
+3	песню	AddToPlaylist	B-music_item
+4	в	AddToPlaylist	O
+5	мой	AddToPlaylist	B-reference
+6	плейлист	AddToPlaylist	O
+7	Летучий	AddToPlaylist	B-playlist
+8	корабль	AddToPlaylist	I-playlist
+
+# id: valid_218
+# text EN: weather in Russia, Kirov 
+# text RU: погода в России, Киров
+# intent: weather/find
+# slots: 10:16:location, 18:22:location
+1	погода	weather/find	O
+2	в	weather/find	O
+3	России,	weather/find	B-location
+4	Киров	weather/find	B-location
+
+# id: valid_219
+# text EN: I want to listen to Your Honor, Lady Luck 
+# text RU: Я хочу послушать Ваше благородие, госпожа Удача
+# intent: SearchCreativeWork
+# slots: 18:47:object_name
+1	Я	SearchCreativeWork	O
+2	хочу	SearchCreativeWork	O
+3	послушать	SearchCreativeWork	O
+4	Ваше	SearchCreativeWork	B-object_name
+5	благородие,	SearchCreativeWork	I-object_name
+6	госпожа	SearchCreativeWork	I-object_name
+7	Удача	SearchCreativeWork	I-object_name
+
+# id: valid_220
+# text EN: Show me Vremya ne zhdyot . 
+# text RU: Покажи мне Время не ждёт .
+# intent: SearchCreativeWork
+# slots: 12:24:object_name
+1	Покажи	SearchCreativeWork	O
+2	мне	SearchCreativeWork	O
+3	Время	SearchCreativeWork	B-object_name
+4	не	SearchCreativeWork	I-object_name
+5	ждёт	SearchCreativeWork	I-object_name
+6	.	SearchCreativeWork	O
+
+# id: valid_221
+# text EN: Is it supposed to rain nearby my current location at 0 o'clock ? 
+# text RU: Будет ли дождь рядом с моим текущим местоположением в 12 часов ночи ? 
+# intent: weather/find
+# slots: 10:14:condition_description, 16:22:location, 29:51:location, 55:67:datetime
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	дождь	weather/find	B-condition_description
+4	рядом	weather/find	B-location
+5	с	weather/find	I-location
+6	моим	weather/find	O
+7	текущим	weather/find	B-location
+8	местоположением	weather/find	I-location
+9	в	weather/find	O
+10	12	weather/find	B-datetime
+11	часов	weather/find	I-datetime
+12	ночи	weather/find	I-datetime
+13	?	weather/find	O
+
+# id: valid_222
+# text EN: book a table in Fairview neighboring the area 
+# text RU: забронируй стол в Изуми, рядом с этим районом
+# intent: BookRestaurant
+# slots: 19:24:location, 26:45:location
+1	забронируй	BookRestaurant	O
+2	стол	BookRestaurant	O
+3	в	BookRestaurant	O
+4	Изуми,	BookRestaurant	B-location
+5	рядом	BookRestaurant	B-location
+6	с	BookRestaurant	I-location
+7	этим	BookRestaurant	I-location
+8	районом	BookRestaurant	I-location
+
+# id: valid_223
+# text EN: what is the forecast for 15:04 in Moscow area for overcast conditions in Matveevskoe 
+# text RU: какая ожидается облачность в районе Матвеевского, Московская область, в 15:04 
+# intent: weather/find
+# slots: 17:26:condition_description, 30:48:location, 51:68:location, 73:77:datetime
+1	какая	weather/find	O
+2	ожидается	weather/find	O
+3	облачность	weather/find	B-condition_description
+4	в	weather/find	O
+5	районе	weather/find	B-location
+6	Матвеевского	weather/find	I-location
+7	,	weather/find	O
+8	Московская	weather/find	B-location
+9	область	weather/find	I-location
+10	,	weather/find	O
+11	в	weather/find	O
+12	15:04	weather/find	B-datetime
+
+# id: valid_224
+# text EN: Can I see the movie schedules ? 
+# text RU: Могу я увидеть расписание фильмов ?
+# intent: SearchScreeningEvent
+# slots: 16:33:object_type
+1	Могу	SearchScreeningEvent	O
+2	я	SearchScreeningEvent	O
+3	увидеть	SearchScreeningEvent	O
+4	расписание	SearchScreeningEvent	B-object_type
+5	фильмов	SearchScreeningEvent	I-object_type
+6	?	SearchScreeningEvent	O
+
+# id: valid_225
+# text EN: find a movie house closest showing Anora 
+# text RU: найди ближайший кинотеатр, показывающий Анору
+# intent: SearchScreeningEvent
+# slots: 7:15:location, 17:25:object_location_type, 41:45:movie_name
+1	найди	SearchScreeningEvent	O
+2	ближайший	SearchScreeningEvent	B-location
+3	кинотеатр	SearchScreeningEvent	B-object_location_type
+4	,	SearchScreeningEvent	O
+5	показывающий	SearchScreeningEvent	O
+6	Анору	SearchScreeningEvent	B-movie_name
+
+# id: valid_226
+# text EN: Find a trailer called Ivan Tsarevich and the Grey Wolf 5 . 
+# text RU: Найди трейлер под названием Иван Царевич и Серый Волк 5 .
+# intent: SearchCreativeWork
+# slots: 7:13:object_type, 29:55:object_name
+1	Найди	SearchCreativeWork	O
+2	трейлер	SearchCreativeWork	B-object_type
+3	под	SearchCreativeWork	O
+4	названием	SearchCreativeWork	O
+5	Иван	SearchScreeningEvent	B-object_name
+6	Царевич	SearchScreeningEvent	I-object_name
+7	и	SearchScreeningEvent	I-object_name
+8	Серый	SearchScreeningEvent	I-object_name
+9	Волк	SearchScreeningEvent	I-object_name
+10	5	SearchScreeningEvent	I-object_name
+
+# id: valid_227
+# text EN: put this album on my Pesni iz Smesharikov playlist 
+# text RU: добавь этот альбом в мой плейлист Песни из Смешариков
+# intent: AddToPlaylist
+# slots: 13:18:music_item, 22:24:reference, 35:53:playlist
+1	добавь	AddToPlaylist	O
+2	этот	AddToPlaylist	O
+3	альбом	AddToPlaylist	B-music_item
+4	в	AddToPlaylist	O
+5	мой	AddToPlaylist	B-reference
+6	плейлист	AddToPlaylist	O
+7	Песни	PlayMusic	B-playlist
+8	из	PlayMusic	I-playlist
+9	Смешариков	PlayMusic	I-playlist
+
+# id: valid_228
+# text EN: What are the movie schedules 
+# text RU: Какое расписание фильмов
+# intent: SearchScreeningEvent
+# slots: 7:24:object_type
+1	Какое	SearchScreeningEvent	O
+2	расписание	SearchScreeningEvent	B-object_type
+3	фильмов	SearchScreeningEvent	I-object_type
+
+# id: valid_229
+# text EN: Play a song by Valery Kuchinsky on Yandex Music 
+# text RU: Включи песню Валерия Кучинского на Яндекс Музыке
+# intent: PlayMusic
+# slots: 8:12:music_item, 14:31:artist, 36:48:service
+1	Включи	PlayMusic	O
+2	песню	PlayMusic	B-music_item
+3	Валерия	PlayMusic	B-artist
+4	Кучинского	PlayMusic	I-artist
+5	на	PlayMusic	O
+6	Яндекс	PlayMusic	B-service
+7	Музыке	PlayMusic	I-service
+
+# id: valid_230
+# text EN: Assign 0 points out of 6 to Poor Lisa 
+# text RU: Поставь 0 баллов из 6 Бедной Лизе
+# intent: RateBook
+# slots: 9:9:rating_value, 11:16:rating_unit, 21:21:best_rating, 23:33:object_name
+1	Поставь	RateBook	O
+2	0	RateBook	B-rating_value
+3	баллов	RateBook	B-rating_unit
+4	из	RateBook	O
+5	6	RateBook	B-best_rating
+6	Бедной	RateBook	B-object_name
+7	Лизе	RateBook	I-object_name
+
+# id: valid_231
+# text EN: Play something by Veski Anna on Yandex Music 
+# text RU: Включи что-нибудь от Вески Анне на Яндекс Музыке
+# intent: PlayMusic
+# slots: 22:31:artist, 36:48:service
+1	Включи	PlayMusic	O
+2	что-нибудь	PlayMusic	O
+3	от	PlayMusic	O
+4	Вески	PlayMusic	B-artist
+5	Анне	PlayMusic	I-artist
+6	на	PlayMusic	O
+7	Яндекс	PlayMusic	B-service
+8	Музыке	PlayMusic	I-service
+
+# id: valid_232
+# text EN: Find me the movie times 
+# text RU: Найди мне расписание фильмов
+# intent: SearchScreeningEvent
+# slots: 11:28:object_type
+1	Найди	SearchScreeningEvent	O
+2	мне	SearchScreeningEvent	O
+3	расписание	SearchScreeningEvent	B-object_type
+4	фильмов	SearchScreeningEvent	I-object_type
+
+# id: valid_233
+# text EN: Will it be windy at 4 PM in Mocow ? 
+# text RU: Будет ли ветрено в 4 часа дня в Москве ?
+# intent: weather/find
+# slots: 10:16:condition_description, 20:29:datetime, 33:38:location
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	ветрено	weather/find	B-condition_description
+4	в	weather/find	O
+5	4	weather/find	B-datetime
+6	часа	weather/find	I-datetime
+7	дня	weather/find	I-datetime
+8	в	weather/find	O
+9	Москве	weather/find	B-location
+10	?	weather/find	O
+
+# id: valid_234
+# text EN: Book me a restaurant for nine in Uryupinsk 
+# text RU: Забронируй мне ресторан на 9-х в Урюпинске
+# intent: BookRestaurant
+# slots: 16:23:restaurant_type, 28:30:party_size_number, 34:42:location
+1	Забронируй	BookRestaurant	O
+2	мне	BookRestaurant	O
+3	ресторан	BookRestaurant	B-restaurant_type
+4	на	BookRestaurant	O
+5	9-х	BookRestaurant	B-party_size_number
+6	в	BookRestaurant	O
+7	Урюпинске	BookRestaurant	B-location
+
+# id: valid_235
+# text EN: find a video game called MiSide 
+# text RU: найди видеоигру под названием MiSide
+# intent: SearchCreativeWork
+# slots: 7:15:object_type, 31:36:object_name
+1	найди	SearchCreativeWork	O
+2	видеоигру	SearchCreativeWork	B-object_type
+3	под	SearchCreativeWork	O
+4	названием	SearchCreativeWork	O
+5	MiSide	SearchCreativeWork	B-object_name
+
+# id: valid_236
+# text EN: Find a table for one at a popular steakhouse for three weeks from now 
+# text RU: Найди столик для одного человека в популярном стейкхаусе на три недели вперёд
+# intent: BookRestaurant
+# slots: 18:23:party_size_number, 36:45:sort, 47:56:restaurant_type, 61:77:datetime
+1	Найди	BookRestaurant	O
+2	столик	BookRestaurant	O
+3	для	BookRestaurant	O
+4	одного	BookRestaurant	B-party_size_number
+5	человек	BookRestaurant	O
+6	в	BookRestaurant	O
+7	популярном	BookRestaurant	B-sort
+8	стейкхаусе	BookRestaurant	B-restaurant_type
+9	на	BookRestaurant	O
+10	три	BookRestaurant	B-datetime
+11	недели	BookRestaurant	I-datetime
+12	вперёд	BookRestaurant	I-datetime
+
+# id: valid_237
+# text EN: For Idiot I rate it three stars 
+# text RU: Идиоту я ставлю три звезды
+# intent: RateBook
+# slots: 1:6:object_name, 17:19:rating_value, 21:26:rating_unit
+1	Идиоту	RateBook	B-object_name
+2	я	RateBook	O
+3	ставлю	RateBook	O
+4	три	RateBook	B-rating_value
+5	звезды	RateBook	B-rating_unit
+
+# id: valid_238
+# text EN: Book a restaurant that serves borscht in Lopatino, Moscow Region . 
+# text RU: Забронируй ресторан, где подают борщ, в Лопатино, Московская область . 
+# intent: BookRestaurant
+# slots: 12:19:restaurant_type, 33:37:served_dish, 41:49:location, 51:60:location, 62:68:location
+1	Забронируй	BookRestaurant	O
+2	ресторан	BookRestaurant	B-restaurant_type
+3	,	BookRestaurant	O
+4	где	BookRestaurant	O
+5	подают	BookRestaurant	O
+6	борщ,	BookRestaurant	B-served_dish
+7	в	BookRestaurant	O
+8	Лопатино,	BookRestaurant	B-location
+9	Московская	BookRestaurant	B-location
+10	область	BookRestaurant	B-location
+11	.	BookRestaurant	O
+
+# id: valid_239
+# text EN: Add It's fun to walk together to my Detskie Pesenki playlist 
+# text RU: Добавь Вместе весело шагать в мой плейлист Детские Песенки
+# intent: AddToPlaylist
+# slots: 8:27:entity_name, 31:33:reference, 44:58:playlist
+1	Добавь	AddToPlaylist	O
+2	Вместе	AddToPlaylist	B-entity_name
+3	весело	AddToPlaylist	I-entity_name
+4	шагать	AddToPlaylist	I-entity_name
+5	в	AddToPlaylist	O
+6	мой	AddToPlaylist	B-reference
+7	плейлист	AddToPlaylist	O
+8	Детские	AddToPlaylist	B-playlist
+9	Песенки	AddToPlaylist	I-playlist
+
+# id: valid_240
+# text EN: Can you tell me what the weather is like here 
+# text RU: Ты можешь сказать мне, какая погода здесь
+# intent: weather/find
+# slots: 37:41:location
+1	Ты	weather/find	O
+2	можешь	weather/find	O
+3	сказать	weather/find	O
+4	мне	weather/find	O
+5	,	weather/find	O
+6	какая	weather/find	O
+7	погода	weather/find	O
+8	здесь	weather/find	B-location
+
+# id: valid_241
+# text EN: Add Fyodor Chaliapin to my Russian Opera playlist 
+# text RU: Добавь Фёдора Шаляпина в мой плейлист Русская опера
+# intent: AddToPlaylist
+# slots: 8:22:artist, 26:28:reference, 39:51:playlist
+1	Добавь	AddToPlaylist	O
+2	Фёдора	AddToPlaylist	B-artist
+3	Шаляпина	AddToPlaylist	I-artist
+4	в	AddToPlaylist	O
+5	мой	AddToPlaylist	B-reference
+6	плейлист	AddToPlaylist	O
+7	Русская	AddToPlaylist	B-playlist
+8	опера	AddToPlaylist	I-playlist
+
+# id: valid_242
+# text EN: I'd like to see the folk epic Ilya Muromets and Nightingale the Robber 
+# text RU: Я хочу увидеть былину Илья Муромец и Соловей разбойник
+# intent: SearchCreativeWork
+# slots: 16:21:object_type, 23:54:object_name
+1	Я	SearchCreativeWork	O
+2	хочу	SearchCreativeWork	O
+3	увидеть	SearchCreativeWork	O
+4	былину	SearchCreativeWork	B-object_type
+5	Илья	SearchCreativeWork	B-object_name
+6	Муромец	SearchCreativeWork	I-object_name
+7	и	SearchCreativeWork	I-object_name
+8	Соловей	SearchCreativeWork	I-object_name
+9	разбойник	SearchCreativeWork	I-object_name
+
+# id: valid_243
+# text EN: I need a reservation for 6 PM. with a party of 10 at Kitaiskaya Gramota 
+# text RU: Мне нужно бронирование на 6 вечера, на 10 персон, в Китайской грамоте
+# intent: BookRestaurant
+# slots: 27:35:datetime, 40:41:party_size_number, 53:69:location
+1	Мне	BookRestaurant	O
+2	нужно	BookRestaurant	O
+3	бронирование	BookRestaurant	O
+4	на	BookRestaurant	O
+5	6	BookRestaurant	B-datetime
+6	вечера,	BookRestaurant	I-datetime
+7	на	BookRestaurant	O
+8	10	BookRestaurant	B-party_size_number
+8	персон,	BookRestaurant	O
+10	в	BookRestaurant	O
+11	Китайской	BookRestaurant	B-location
+12	грамоте	BookRestaurant	I-location
+
+# id: valid_244
+# text EN: Use VK Music to play music from the eighties 
+# text RU: Используй VK Музыку для воспроизведения музыки из восьмидесятых
+# intent: PlayMusic
+# slots: 11:19:service, 51:63:datetime
+1	Используй	PlayMusic	O
+2	VK	PlayMusic	B-service
+3	Музыку	PlayMusic	I-service
+4	для	PlayMusic	O
+5	воспроизведения	PlayMusic	O
+6	музыки	PlayMusic	O
+7	из	PlayMusic	O
+8	восьмидесятых	PlayMusic	B-datetime
+
+# id: valid_245
+# text EN: find soundtrack titled Goodbye, America 
+# text RU: найди саундтрек под названием Гудбай, Америка
+# intent: SearchCreativeWork
+# slots: 7:15:object_type, 31:45:object_name
+1	найди	SearchCreativeWork	O
+2	саундтрек	SearchCreativeWork	B-object_type
+3	под	SearchCreativeWork	O
+4	названием	SearchCreativeWork	O
+5	Гудбай,	SearchCreativeWork	B-object_name
+6	Америка	SearchCreativeWork	I-object_name
+
+# id: valid_246
+# text EN: Which is the nearest cinema showing movies that start in one hour ? 
+# text RU: Какой из ближайших кинотеатров показывает фильмы, которые начнутся через час ?
+# intent: SearchScreeningEvent
+# slots: 10:18:location, 20:30:object_location_type, 43:48:movie_type, 68:76:datetime
+1	Какой	SearchScreeningEvent	O
+2	из	SearchScreeningEvent	O
+3	ближайших	SearchScreeningEvent	B-location
+4	кинотеатров	SearchScreeningEvent	B-object_location_type
+5	показывает	SearchScreeningEvent	O
+6	фильмы	SearchScreeningEvent	B-movie_type
+7	,	SearchScreeningEvent	O
+8	которые	SearchScreeningEvent	O
+9	начнутся	SearchScreeningEvent	O
+10	через	SearchScreeningEvent	B-datetime
+11	час	SearchScreeningEvent	I-datetime
+12	?	SearchScreeningEvent	O
+
+# id: valid_247
+# text EN: Add Lyube to Deadly Force 
+# text RU: Добавь Любэ в Убойную силу
+# intent: AddToPlaylist
+# slots: 8:11:artist, 15:26:playlist
+1	Добавь	AddToPlaylist	O
+2	Любэ	AddToPlaylist	B-artist
+3	в	AddToPlaylist	O
+4	Убойную	AddToPlaylist	B-playlist
+5	силу	AddToPlaylist	I-playlist
+
+# id: valid_248
+# text EN: Open Yandex Music and play a song from the twenties by Peter Leshchenko 
+# text RU: Открой Яндекс Музыку и включи песню из двадцатых от Петра Лещенко 
+# intent: PlayMusic
+# slots: 8:20:service, 31:35:music_item, 40:48:datetime, 53:65:artist
+1	Открой	PlayMusic	O
+2	Яндекс	PlayMusic	B-service
+3	Музыку	PlayMusic	I-service
+4	и	PlayMusic	O
+5	включи	PlayMusic	O
+6	песню	PlayMusic	B-music_item
+7	из	PlayMusic	O
+8	двадцатых	PlayMusic	B-datetime
+9	от	PlayMusic	O
+10	Петра	PlayMusic	B-artist
+11	Лещенко	PlayMusic	I-artist
+
+# id: valid_249
+# text EN: I want to book a restaurant 
+# text RU: Я хочу забронировать ресторан
+# intent: BookRestaurant
+# slots: 22:29:restaurant_type
+1	Я	BookRestaurant	O
+2	хочу	BookRestaurant	O
+3	забронировать	BookRestaurant	O
+4	ресторан	BookRestaurant	B-restaurant_type
+
+# id: valid_250
+# text EN: Play the album Kombat by Lyube 
+# text RU: Включи альбом Комбат от Любэ
+# intent: PlayMusic
+# slots: 8:13:music_item, 15:20:album, 25:28:artist
+1	Включи	PlayMusic	O
+2	альбом	PlayMusic	B-music_item
+3	Комбат	PlayMusic	B-album
+4	от	PlayMusic	O
+5	Любэ	PlayMusic	B-artist
+
+# id: valid_251
+# text EN: add this artist to my Russian rap playlist 
+# text RU: добавь этого артиста в мой плейлист Русский рэп
+# intent: AddToPlaylist
+# slots: 14:20:music_item, 24:26:reference, 37:47:playlist
+1	добавь	AddToPlaylist	O
+2	этого	AddToPlaylist	O
+3	артиста	AddToPlaylist	B-music_item
+4	в	AddToPlaylist	O
+5	мой	AddToPlaylist	B-reference
+6	плейлист	AddToPlaylist	O
+7	Русский	AddToPlaylist	B-playlist
+8	рэп	AddToPlaylist	I-playlist
+
+# id: valid_252
+# text EN: I want to find the show Battle of the Psychics . 
+# text RU: Я хочу найти шоу Битва Экстрасенсов .
+# intent: SearchCreativeWork
+# slots: 14:16:object_type, 18:35:object_name
+1	Я	SearchCreativeWork	O
+2	хочу	SearchCreativeWork	O
+3	найти	SearchCreativeWork	O
+4	шоу	SearchCreativeWork	B-object_type
+5	Битва	SearchCreativeWork	B-object_name
+6	Экстрасенсов	SearchCreativeWork	I-object_name
+7	.	SearchCreativeWork	O
+
+# id: valid_253
+# text EN: play the top-twenty songs by Jony on Yandex Music 
+# text RU: включи 20-лучших песен JONY на Яндекс Музыке
+# intent: PlayMusic
+# slots: 8:16:sort, 24:27:artist, 32:37:service, 39:44:service
+1	включи	PlayMusic	O
+2	20-лучших	PlayMusic	B-sort
+3	песен	PlayMusic	O
+4	JONY	PlayMusic	B-artist
+5	на	PlayMusic	O
+6	Яндекс	PlayMusic	B-service
+7	Музыке	PlayMusic	B-service
+
+# id: valid_254
+# text EN: How will the weather be in six minutes close to Kolomenskoye Park 
+# text RU: Какая будет погода через 6 минут рядом с Коломенским парком
+# intent: weather/find
+# slots: 20:32:datetime, 34:40:location, 42:59:location
+1	Какая	weather/find	O
+2	будет	weather/find	O
+3	погода	weather/find	O
+4	через	weather/find	B-datetime
+5	6	weather/find	I-datetime
+6	минут	weather/find	I-datetime
+7	рядом	weather/find	B-location
+7	с	weather/find	I-location
+9	Коломенским	weather/find	B-location
+9	парком	weather/find	I-location
+
+# id: valid_255
+# text EN: I wish to listen to some fifties music. 
+# text RU: Я хочу послушать какую-нибудь музыку пятьтидесятых.
+# intent: PlayMusic
+# slots: 38:51:datetime
+1	Я	PlayMusic	O
+2	хочу	PlayMusic	O
+3	послушать	PlayMusic	O
+4	какую-нибудь	PlayMusic	O
+5	музыку	PlayMusic	O
+6	пятьтидесятых.	PlayMusic	B-datetime
+
+# id: valid_256
+# text EN: what time is Ivan Tsarevich and the Grey Wolf 6 showing at Kinomax 
+# text RU: в какое время Ивана Царевича и Серого Волка 6 показывают в Киномаксе
+# intent: SearchScreeningEvent
+# slots: 15:45:movie_name, 60:68:location
+1	в	SearchScreeningEvent	O
+2	какое	SearchScreeningEvent	O
+3	время	SearchScreeningEvent	O
+4	Ивана	SearchScreeningEvent	B-movie_name
+5	Царевича	SearchScreeningEvent	I-movie_name
+6	и	SearchScreeningEvent	I-movie_name
+7	Серого	SearchScreeningEvent	I-movie_name
+8	Волка	SearchScreeningEvent	I-movie_name
+9	6	SearchScreeningEvent	I-movie_name
+10	показывают	SearchScreeningEvent	O
+11	в	SearchScreeningEvent	O
+12	Киномаксе	SearchScreeningEvent	B-location
+
+# id: valid_257
+# text EN: Find a photograph of How Not to Rescue a Princess 
+# text RU: Найди фотографию из Трёх Богатырей и Шамаханской царицы
+# intent: SearchCreativeWork
+# slots: 7:16:object_type, 21:55:object_name
+1	Найди	SearchCreativeWork	O
+2	фотографию	SearchCreativeWork	B-object_type
+3	из	SearchCreativeWork	O
+4	Трёх	SearchCreativeWork	B-object_name
+5	Богатырей	SearchCreativeWork	I-object_name
+6	и	SearchCreativeWork	I-object_name
+7	Шамаханской	SearchCreativeWork	I-object_name
+8	царицы	SearchCreativeWork	I-object_name
+
+# id: valid_258
+# text EN: put Do you want? on my Zemfira playlist  
+# text RU: добавь Хочешь? в мой плейлист Земфира
+# intent: AddToPlaylist
+# slots: 8:14:entity_name, 18:20:reference, 31:37:playlist
+1	добавь	AddToPlaylist	O
+2	Хочешь?	AddToPlaylist	B-entity_name
+3	в	AddToPlaylist	O
+4	мой	AddToPlaylist	B-reference
+5	плейлист	AddToPlaylist	O
+6	Земфира	AddToPlaylist	B-playlist
+
+# id: valid_259
+# text EN: Play me the best Zemfira song 
+# text RU: Включи мне лучшую песню Земфиры
+# intent: PlayMusic
+# slots: 12:17:sort, 19:23:music_item, 25:31:artist
+1	Включи	PlayMusic	O
+2	мне	PlayMusic	O
+3	лучшую	PlayMusic	B-sort
+4	песню	PlayMusic	B-music_item
+5	Земфиры	PlayMusic	B-artist
+
+# id: valid_260
+# text EN: On may the thirteenth, 2037 what will it be like in the village of Belyashi, Altai Republico 
+# text RU: 13 мая 2037 года каким будет день в селе Беляши, Республика Алтай 
+# intent: weather/find
+# slots: 1:16:datetime, 37:47:location, 50:65:location
+1	13	weather/find	B-datetime
+2	мая	weather/find	I-datetime
+3	2037	weather/find	I-datetime
+4	года	weather/find	I-datetime
+5	каким	weather/find	O
+6	будет	weather/find	O
+7	день	weather/find	O
+8	в	weather/find	O
+9	селе	weather/find	B-location
+10	Беляши	weather/find	I-location
+11	,	weather/find	O
+12	Республика	weather/find	B-location
+13	Алтай	weather/find	I-location
+
+# id: valid_261
+# text EN: Find movie schedules for Kinomax . 
+# text RU: Найди расписание фильмов в Киномаксе .
+# intent: SearchScreeningEvent
+# slots: 7:24:object_type, 28:36:location
+1	Найди	SearchScreeningEvent	O
+2	расписание	SearchScreeningEvent	B-object_type
+3	фильмов	SearchScreeningEvent	I-object_type
+4	в	SearchScreeningEvent	O
+5	Киномаксе	SearchScreeningEvent	B-location
+6	.	SearchScreeningEvent	O
+
+# id: valid_262
+# text EN: Find a TV series called At Knives . 
+# text RU: Найди ТВ шоу под названием На ножах .
+# intent: SearchCreativeWork
+# slots: 7:12:object_type, 1:35:object_name
+1	Найди	SearchCreativeWork	O
+2	ТВ	SearchCreativeWork	B-object_type
+3	шоу	SearchCreativeWork	I-object_type
+4	под	SearchCreativeWork	O
+5	названием	SearchCreativeWork	O
+6	На	SearchCreativeWork	B-object_name
+7	ножах	SearchCreativeWork	I-object_name
+8	.	SearchCreativeWork	O
+
+# id: valid_263
+# text EN: what is the forecast for in eighteen minutes here for colder temps 
+# text RU: ожидается ли здесь похолодание в ближайшие 18 минут
+# intent: weather/find
+# slots: 14:18:location, 20:30:condition_temperature, 34:51:datetime
+1	ожидается	weather/find	O
+2	ли	weather/find	O
+3	здесь	weather/find	B-location
+4	похолодание	weather/find	B-condition_temperature
+5	в	weather/find	O
+6	ближайшие	weather/find	B-datetime
+7	18	weather/find	I-datetime
+8	минут	weather/find	I-datetime
+
+# id: valid_264
+# text EN: Book a restaurant at sixteen o'clock in city centre 
+# text RU: Забронируй ресторан на шесть часов вечера в центре города
+# intent: BookRestaurant
+# slots: 12:19:restaurant_type, 24:41:datetime, 45:50:location, 52:57:location
+1	Забронируй	BookRestaurant	O
+2	ресторан	BookRestaurant	B-restaurant_type
+3	на	BookRestaurant	O
+4	шесть	BookRestaurant	B-datetime
+5	часов	BookRestaurant	I-datetime
+6	вечера	BookRestaurant	I-datetime
+7	в	BookRestaurant	O
+8	центре	BookRestaurant	B-location
+9	города	BookRestaurant	B-location
+
+# id: valid_265
+# text EN: Katya and Seryozha want to go to the best osteria steakhouse in the city center, St. Petersburg, this afternoon 
+# text RU: Катя и Серёжа хотят отправиться в лучший стейкхаус в центре города, Петербуг, сегодня днём
+# intent: BookRestaurant
+# slots: 1:13:party_size_description, 35:40:sort, 42:50:restaurant_type, 54:66:location, 69:76:location, 87:90:datetime
+1	Катя	BookRestaurant	B-party_size_description
+2	и	BookRestaurant	I-party_size_description
+3	Серёжа	BookRestaurant	I-party_size_description
+4	хотят	BookRestaurant	O
+5	отправиться	BookRestaurant	O
+6	в	BookRestaurant	O
+7	лучший	BookRestaurant	B-sort
+8	стейкхаус	BookRestaurant	B-restaurant_type
+9	в	BookRestaurant	O
+10	центре	BookRestaurant	B-location
+11	города	BookRestaurant	I-location
+12	,	BookRestaurant	O
+13	Петербуг	BookRestaurant	B-location
+14	,	BookRestaurant	O
+15	сегодня	BookRestaurant	O
+16	днём	BookRestaurant	B-datetime
+
+# id: valid_266
+# text EN: is it going to be chilly in Uryupinsk in 13 hours 
+# text RU:  будет ли прохладно в Урюпинске через 13 часов
+# intent: weather/find
+# slots: 10:18:condition_temperature, 22:30:location, 38:45:datetime
+1	будет	weather/find	O
+2	ли	weather/find	O
+3	прохладно	weather/find	B-condition_temperature
+4	в	weather/find	O
+5	Урюпинске	weather/find	B-location
+6	через	weather/find	O
+7	13	weather/find	B-datetime
+8	часов	weather/find	I-datetime
+
+# id: valid_267
+# text EN: add Polina Gagarina to Russkaya estrada playlist 
+# text RU: добавь Полину Гагарину в плейлист Русская эстрада
+# intent: AddToPlaylist
+# slots: 8:22:artist, 35:49:playlist
+1	добавь	AddToPlaylist	O
+2	Полину	AddToPlaylist	B-artist
+3	Гагарину	AddToPlaylist	I-artist
+4	в	AddToPlaylist	O
+5	плейлист	AddToPlaylist	O
+6	Русская	AddToPlaylist	B-playlist
+7	эстрада	AddToPlaylist	I-playlist
+
+# id: valid_268
+# text EN: Rate this current essay three out of 6 stars 
+# text RU: Оцени текущее эссе на три из 6 звезд
+# intent: RateBook
+# slots: 7:13:object_select, 15:18:object_type, 23:25:rating_value, 30:30:best_rating, 32:36:rating_unit
+1	Оцени	RateBook	O
+2	текущее	RateBook	B-object_select
+3	эссе	RateBook	B-object_type
+4	на	RateBook	O
+5	три	RateBook	B-rating_value
+6	из	RateBook	O
+7	6	RateBook	B-best_rating
+8	звезд	RateBook	B-rating_unit
+
+# id: valid_269
+# text EN: Book a table for three at a top-rated restaurant 
+# text RU: Забронируй столик для троих в ресторане с высоким рейтингом
+# intent: BookRestaurant
+# slots: 23:27:party_size_number, 31:39:restaurant_type, 12:59:sort
+1	Забронируй	BookRestaurant	O
+2	столик	BookRestaurant	O
+3	для	BookRestaurant	O
+4	троих	BookRestaurant	B-party_size_number
+5	в	BookRestaurant	O
+6	ресторане	BookRestaurant	B-restaurant_type
+7	с	BookRestaurant	B-sort
+8	высоким	BookRestaurant	I-sort
+9	рейтингом	BookRestaurant	I-sort
+
+# id: valid_270
+# text EN: rate the current novel 0 of 6 
+# text RU: оцени текущий роман 0 из 6
+# intent: RateBook
+# slots: 7:13:object_select, 15:19:object_type, 21:21:rating_value, 26:26:best_rating
+1	оцени	RateBook	O
+2	текущий	RateBook	B-object_select
+3	роман	RateBook	B-object_type
+4	на	RateBook	O
+5	0	RateBook	B-rating_value
+6	из	RateBook	O
+7	6	RateBook	B-best_rating
+
+# id: valid_271
+# text EN: I'd like to see the showtimes for Anora at the movie house 
+# text RU: Я хочу увидеть расписание Аноры в кинотеатре
+# intent: SearchScreeningEvent
+# slots: 27:31:movie_name, 35:44:object_location_type
+1	Я	SearchScreeningEvent	O
+2	хочу	SearchScreeningEvent	O
+3	увидеть	SearchScreeningEvent	O
+4	расписание	SearchScreeningEvent	O
+5	Аноры	SearchScreeningEvent	B-movie_name
+6	в	SearchScreeningEvent	O
+7	кинотеатре	SearchScreeningEvent	B-object_location_type
+
+# id: valid_272
+# text EN: Will it get chillier in Blagoveshchensk in 8 hours 
+# text RU: Будет ли прохладнее в Благовещенске через 8 часов
+# intent: weather/find
+# slots: 10:19:condition_temperature, 23:35:location, 37:49:datetime
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	прохладнее	weather/find	B-condition_temperature
+4	в	weather/find	O
+5	Благовещенске	weather/find	B-location
+6	через	weather/find	B-datetime
+7	8	weather/find	I-datetime
+8	часов	weather/find	I-datetime
+
+# id: valid_273
+# text EN: add this tune to my Pesni pod balalayku playlist 
+# text RU: добавь эту мелодию в мой плейлист Песни под балалайку 
+# intent: AddToPlaylist
+# slots: 12:18:music_item, 22:24:reference, 35:53:playlist
+1	добавь	AddToPlaylist	O
+2	эту	AddToPlaylist	O
+3	мелодию	AddToPlaylist	B-music_item
+4	в	AddToPlaylist	O
+5	мой	AddToPlaylist	B-reference
+6	плейлист	AddToPlaylist	O
+7	Песни	AddToPlaylist	B-playlist
+8	под	AddToPlaylist	I-playlist
+9	балалайку	AddToPlaylist	I-playlist
+
+# id: valid_274
+# text EN: book for 3 in Karl and Friedrich 
+# text RU: забронируй на 3-х в Карл и Фридрих
+# intent: BookRestaurant
+# slots: 15:17:party_size_number, 21:34:location
+1	забронируй	BookRestaurant	O
+2	на	BookRestaurant	O
+3	3-х	BookRestaurant	B-party_size_number
+4	в	BookRestaurant	O
+5	Карл	BookRestaurant	B-location
+6	и	BookRestaurant	I-location
+7	Фридрих	BookRestaurant	I-location
+
+# id: valid_275
+# text EN: Will it be chillier in Novocherkassk ? 
+# text RU: Будет ли прохладнее в Новочеркасске ?
+# intent: weather/find
+# slots: 10:19:condition_temperature, 23:35:location
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	прохладнее	weather/find	B-condition_temperature
+4	в	weather/find	O
+5	Новочеркасске	weather/find	B-location
+6	?	weather/find	O
+
+# id: valid_276
+# text EN: Rate this essay 2 out of 6 stars 
+# text RU: Оцени это эссе на 2 из 6 звезд
+# intent: RateBook
+# slots: 7:9:object_select, 11:14:object_type, 19:19:rating_value, 24:24:best_rating, 26:30:rating_unit
+1	Оцени	RateBook	O
+2	это	RateBook	B-object_select
+3	эссе	RateBook	B-object_type
+4	на	RateBook	O
+5	2	RateBook	B-rating_value
+6	из	RateBook	O
+7	6	RateBook	B-best_rating
+8	звезд	RateBook	B-rating_unit
+
+# id: valid_277
+# text EN: Give three stars / 6 to Metro 2033 
+# text RU: Дай три звезды / 6 Метро 2033
+# intent: RateBook
+# slots: 5:7:rating_value, 9:14:rating_unit, 18:18:best_rating, 20:29:object_name
+1	Дай	RateBook	O
+2	три	RateBook	B-rating_value
+3	звезды	RateBook	B-rating_unit
+4	/	RateBook	O
+5	6	RateBook	B-best_rating
+6	Метро	RateBook	B-object_name
+7	2033	RateBook	I-object_name
+
+# id: valid_278
+# text EN: Find the movie schedule for CARO 7 Atrium . 
+# text RU: Найди расписание фильмов в КАРО 7 Атриум .
+# intent: SearchScreeningEvent
+# slots: 7:24:object_type, 28:40:location
+1	Найди	SearchScreeningEvent	O
+2	расписание	SearchScreeningEvent	B-object_type
+3	фильмов	SearchScreeningEvent	I-object_type
+4	в	SearchScreeningEvent	O
+5	КАРО	SearchScreeningEvent	B-location
+6	7	SearchScreeningEvent	I-location
+7	Атриум	SearchScreeningEvent	I-location
+8	.	SearchScreeningEvent	O
+
+# id: valid_279
+# text EN: What movies are scheduled in the neighbourhood ? 
+# text RU: Какие фильмы в расписании в округе ?
+# intent: SearchScreeningEvent
+# slots: 7:12:movie_type, 14:34:location
+1	Какие	SearchScreeningEvent	O
+2	фильмы	SearchScreeningEvent	B-movie_type
+3	в	SearchScreeningEvent	O
+4	расписании	SearchScreeningEvent	O
+5	в	SearchScreeningEvent	B-location
+6	округе	SearchScreeningEvent	I-location
+7	?	SearchScreeningEvent	O
+
+# id: valid_280
+# text EN: add Feyerverk to Elektro-valenki  
+# text RU: добавь Фейерверк в Электро-валенки
+# intent: AddToPlaylist
+# slots: 8:16:entity_name, 20:34:playlist
+1	добавь	AddToPlaylist	O
+2	Фейерверк	AddToPlaylist	B-entity_name
+3	в	AddToPlaylist	O
+4	Электро-валенки	AddToPlaylist	B-playlist
+
+# id: valid_281
+# text EN: Find a reservation for a cafe that serves varenyky and chebureki for a party of 6 
+# text RU: Забронируй столик в кафе, где подают вареники и чебуреки на компанию из 6-х
+# intent: BookRestaurant
+# slots: 21:24:restaurant_type, 38:56:served_dish, 73:75:party_size_number
+1	Забронируй	BookRestaurant	O
+2	столик	BookRestaurant	O
+3	в	BookRestaurant	O
+4	кафе	BookRestaurant	B-restaurant_type
+5	,	BookRestaurant	O
+6	где	BookRestaurant	O
+7	подают	BookRestaurant	O
+8	вареники	BookRestaurant	B-served_dish
+9	и	BookRestaurant	I-served_dish
+10	чебуреки	BookRestaurant	I-served_dish
+11	на	BookRestaurant	O
+12	компанию	BookRestaurant	O
+13	из	BookRestaurant	O
+14	6-х	BookRestaurant	B-party_size_number
+
+# id: valid_282
+# text EN: Rate Anna Karenina 5 points 
+# text RU: Оцени Анну Каренину 5 баллами
+# intent: RateBook
+# slots: 7:19:object_name, 21:21:rating_value, 23:29:rating_unit
+1	Оцени	RateBook	O
+2	Анну	RateBook	B-object_name
+3	Каренину	RateBook	I-object_name
+4	5	RateBook	B-rating_value
+5	баллами	RateBook	B-rating_unit
+
+# id: valid_283
+# text EN: add Jacob Hoggard to my Top 10 Russian Singers playlist 
+# text RU: добавь Егора Крида в мой плейлист топ-10 русских певцов
+# intent: AddToPlaylist
+# slots: 8:18:artist, 22:24:reference, 35:55:playlist
+1	добавь	AddToPlaylist	O
+2	Егора	AddToPlaylist	B-artist
+3	Крида	AddToPlaylist	I-artist
+4	в	AddToPlaylist	O
+5	мой	AddToPlaylist	B-reference
+6	плейлист	AddToPlaylist	O
+7	топ-10	AddToPlaylist	B-playlist
+8	русских	AddToPlaylist	I-playlist
+9	певцов	AddToPlaylist	I-playlist
+
+# id: valid_284
+# text EN: Give me a list of movie times for films in the area . 
+# text RU: Покажи мне расписание фильмов поблизости .
+# intent: SearchScreeningEvent
+# slots: 12:21:object_type, 23:29:movie_type, 31:40:location
+1	Покажи	SearchScreeningEvent	O
+2	мне	SearchScreeningEvent	O
+3	расписание	SearchScreeningEvent	B-object_type
+4	фильмов	SearchScreeningEvent	B-movie_type
+5	поблизости	SearchScreeningEvent	B-location
+6	.	SearchScreeningEvent	O
+
+# id: valid_285
+# text EN: find Ural Pelmeni , a television show 
+# text RU: найди Уральские пельмени , телевизионное шоу
+# intent: SearchCreativeWork
+# slots: 7:24:object_name, 28:44:object_type
+1	найди	SearchCreativeWork	O
+2	Уральские	SearchCreativeWork	B-object_name
+3	пельмени	SearchCreativeWork	I-object_name
+4	,	SearchCreativeWork	O
+5	телевизионное	SearchCreativeWork	B-object_type
+5	шоу	SearchCreativeWork	I-object_type
+
+# id: valid_286
+# text EN: What's the weather close-by Vostochnoye Butovo 
+# text RU: Какая погода рядом с Восточным Бутово
+# intent: weather/find
+# slots: 14:18:location, 22:37:location
+1	Какая	weather/find	O
+2	погода	weather/find	O
+3	рядом	weather/find	B-location
+4	с	weather/find	O
+5	Восточным	weather/find	B-location
+6	Бутово	weather/find	I-location
+
+# id: valid_287
+# text EN: when can i see On drakon in a movie theatre 
+# text RU: когда я cмогу увидеть Он — дракон в кинотеатре
+# intent: SearchScreeningEvent
+# slots: 23:33:movie_name, 37:46:object_location_type
+1	когда	SearchScreeningEvent	O
+2	я	SearchScreeningEvent	O
+3	cмогу	SearchScreeningEvent	O
+4	увидеть	SearchScreeningEvent	O
+5	Он	SearchScreeningEvent	B-movie_name
+6	—	SearchScreeningEvent	I-movie_name
+7	дракон	SearchScreeningEvent	I-movie_name
+8	в	SearchScreeningEvent	O
+9	кинотеатре	SearchScreeningEvent	B-object_location_type
+
+# id: valid_288
+# text EN: Please put an album by Noize MC on my Russian rap The 2000s playlist 
+# text RU: Пожалуйста, добавь альбом Noize MC в мой плейлист Русский рэп 2000-х
+# intent: AddToPlaylist
+# slots: 20:25:music_item, 27:34:artist, 38:40:reference, 51:68:playlist
+1	Пожалуйста	AddToPlaylist	O
+2	,	AddToPlaylist	O
+3	добавь	AddToPlaylist	O
+4	альбом	AddToPlaylist	B-music_item
+5	Noize	AddToPlaylist	B-artist
+6	MC	AddToPlaylist	I-artist
+7	в	AddToPlaylist	O
+8	мой	AddToPlaylist	B-reference
+9	плейлист	AddToPlaylist	O
+10	Русский	AddToPlaylist	B-playlist
+11	рэп	AddToPlaylist	I-playlist
+12	2000-х	AddToPlaylist	I-playlist
+
+# id: valid_289
+# text EN: show of K chortu etu gordost' 
+# text RU: покажи К чёрту эту гордость
+# intent: SearchCreativeWork
+# slots: 1:6:object_type, 8:27:object_name
+1	покажи	SearchCreativeWork	B-object_type
+2	К	SearchCreativeWork	B-object_name
+3	чёрту	SearchCreativeWork	I-object_name
+4	эту	SearchCreativeWork	I-object_name
+5	гордость	SearchCreativeWork	I-object_name
+
+# id: valid_290
+# text EN: book a top-rated osteria seven weeks from now 
+# text RU: забронируй столик в лучшем баре на семь недель вперёд
+# intent: BookRestaurant
+# slots: 21:26:sort, 28:31:restaurant_type, 36:53:datetime
+1	забронируй	BookRestaurant	O
+2	столик	BookRestaurant	O
+3	в	BookRestaurant	O
+4	лучшем	BookRestaurant	B-sort
+5	баре	BookRestaurant	B-restaurant_type
+6	на	BookRestaurant	O
+7	семь	BookRestaurant	B-datetime
+8	недель	BookRestaurant	I-datetime
+9	вперёд	BookRestaurant	I-datetime
+
+# id: valid_291
+# text EN: What movie house is showing Tur s Ivanushkami at 08:56:29 ? 
+# text RU: Какой кинотеатр показывает Тур с Иванушками в 08:56:29 ?
+# intent: SearchScreeningEvent
+# slots: 7:15:object_location_type, 28:43:movie_name, 47:54:datetime
+1	Какой	SearchScreeningEvent	O
+2	кинотеатр	SearchScreeningEvent	B-object_location_type
+3	показывает	SearchScreeningEvent	O
+4	Тур	SearchScreeningEvent	B-movie_name
+5	с	SearchScreeningEvent	I-movie_name
+6	Иванушками	SearchScreeningEvent	I-movie_name
+7	в	SearchScreeningEvent	O
+8	08:56:29	SearchScreeningEvent	B-datetime
+9	?	SearchScreeningEvent	O
+
+# id: valid_292
+# text EN: Find a restaurant in Essentuki that servec okroshka 
+# text RU: Найди ресторан в Ессентуках , где подают окрошку
+# intent: BookRestaurant
+# slots: 7:14:restaurant_type, 18:27:location, 42:48:served_dish
+1	Найди	BookRestaurant	O
+2	ресторан	BookRestaurant	B-restaurant_type
+3	в	BookRestaurant	O
+4	Ессентуках	BookRestaurant	B-location
+5	,	BookRestaurant	O
+6	где	BookRestaurant	O
+7	подают	BookRestaurant	O
+8	окрошку	BookRestaurant	B-served_dish
+
+# id: valid_293
+# text EN: Book a reservation for 7 people at Frau Marta on june the 8th, 2029 
+# text RU: Забронируй столик на 7 человек во Фрау Марте на 8 июня, 2029
+# intent: BookRestaurant
+# slots: 22:22:party_size_number, 35:44:restaurant_name, 49:60:datetime
+1	Забронируй	BookRestaurant	O
+2	столик	BookRestaurant	O
+3	на	BookRestaurant	O
+4	7	BookRestaurant	B-party_size_number
+5	человек	BookRestaurant	O
+6	во	BookRestaurant	O
+7	Фрау	BookRestaurant	B-restaurant_name
+8	Марте	BookRestaurant	I-restaurant_name
+9	на	BookRestaurant	O
+10	8	BookRestaurant	B-datetime
+11	июня,	BookRestaurant	I-datetime
+12	2029	BookRestaurant	I-datetime
+
+# id: valid_294
+# text EN: play fourties tunes 
+# text RU: включи музыку сороковых
+# intent: PlayMusic
+# slots: 15:23:datetime
+1	включи	PlayMusic	O
+2	музыку	PlayMusic	O
+3	сороковых	PlayMusic	B-datetime
+
+# id: valid_295
+# text EN: When will Kinomax be showing animated movies 
+# text RU: Когда в Киномаксе будут показывать анимационные фильмы
+# intent: SearchScreeningEvent
+# slots: 9:17:location, 36:54:movie_type
+1	Когда	SearchScreeningEvent	O
+2	в	SearchScreeningEvent	O
+3	Киномаксе	SearchScreeningEvent	B-location
+4	будут	SearchScreeningEvent	O
+5	показывать	SearchScreeningEvent	O
+6	анимационные	SearchScreeningEvent	B-movie_type
+7	фильмы	SearchScreeningEvent	I-movie_type
+
+# id: valid_296
+# text EN: Play music on VK Music 
+# text RU:  Включи музыку в VK Музыке
+# intent: PlayMusic
+# slots: 17:25:service
+1	Включи	PlayMusic	O
+2	музыку	PlayMusic	O
+3	в	PlayMusic	O
+4	VK	PlayMusic	B-service
+5	Музыке	PlayMusic	I-service
+
+# id: valid_297
+# text EN: show book name Deti podzemel'ya 
+# text RU: покажи книгу под названием Дети подземелья
+# intent: SearchCreativeWork
+# slots: 8:12:object_type, 28:42:object_name
+1	покажи	SearchCreativeWork	O
+2	книгу	SearchCreativeWork	B-object_type
+3	под	SearchCreativeWork	O
+4	названием	SearchCreativeWork	O
+5	Дети	SearchCreativeWork	B-object_name
+6	подземелья	SearchCreativeWork	I-object_name
+
+# id: valid_298
+# text EN: Find the movie schedules for movies close by 
+# text RU: Найди расписание для фильмов поблизости
+# intent: SearchScreeningEvent
+# slots: 7:16:object_type, 22:28:movie_type, 30:39:location
+1	Найди	SearchScreeningEvent	O
+2	расписание	SearchScreeningEvent	B-object_type
+3	для	SearchScreeningEvent	O
+4	фильмов	SearchScreeningEvent	B-movie_type
+5	поблизости	SearchScreeningEvent	B-location
+
+# id: valid_299
+# text EN: this winter, Ivan, Nikita, and Varya want to visit a soup restaurant near Red Square . 
+# text RU: этой зимой Иван, Никита и Варя хотят сходить в суповой ресторан рядом с Красной площадью .
+# intent: BookRestaurant
+# slots: 1:10:datetime, 12:30:party_size_description, 48:63:restaurant_type, 65:69:location, 73:79:location, 81:88:location
+1	этой	BookRestaurant	B-datetime
+2	зимой	BookRestaurant	I-datetime
+3	,	BookRestaurant	O
+4	Иван,	BookRestaurant	B-party_size_description
+5	Никита	BookRestaurant	I-party_size_description
+6	и	BookRestaurant	I-party_size_description
+7	Варя	BookRestaurant	I-party_size_description
+8	хотят	BookRestaurant	O
+9	сходить	BookRestaurant	O
+10	в	BookRestaurant	O
+11	суповой	BookRestaurant	B-restaurant_type
+12	ресторан	BookRestaurant	I-restaurant_type
+13	рядом	BookRestaurant	B-location
+14	с	BookRestaurant	O
+15	Красной	BookRestaurant	B-location
+16	площадью	BookRestaurant	B-location
+17	.	BookRestaurant	O
+
+# id: valid_300
+# text EN: Add tune to my Russian rap playlist 
+# text RU: Добавь мелодию в мой плейлист Русский рэп
+# intent: AddToPlaylist
+# slots: 8:14:music_item, 18:20:reference, 31:41:playlist
+1	Добавь	AddToPlaylist	O
+2	мелодию	AddToPlaylist	B-music_item
+3	в	AddToPlaylist	O
+4	мой	AddToPlaylist	B-reference
+5	плейлист	AddToPlaylist	O
+6	Русский	AddToPlaylist	B-playlist
+7	рэп	AddToPlaylist	I-playlist
+
+# id: valid_1
+# text EN: Is it going to rain today? 
+# text RU: Сегодня будет дождь?
+# intent: weather/find
+# slots: 1:7:datetime, 15:19:weather/attribute
+1	Сегодня	weather/find	B-datetime
+2	будет	weather/find	O
+3	дождь	weather/find	B-weather/attribute
+4	?	weather/find	O
+
+# id: valid_2
+# text EN: how hot is it going to be today 
+# text RU: насколько жарко будет сегодня
+# intent: weather/find
+# slots: 11:15:weather/attribute, 23:29:datetime
+1	насколько	weather/find	O
+2	жарко	weather/find	B-weather/attribute
+3	будет	weather/find	O
+4	сегодня	weather/find	B-datetime
+
+# id: valid_3
+# text EN: How hot is it? 
+# text RU: Насколько жарко сейчас?
+# intent: weather/find
+# slots: 11:15:weather/attribute
+1	Насколько	weather/find	O
+2	жарко	weather/find	B-weather/attribute
+3	сейчас	weather/find	O
+4	?	weather/find	O
+
+# id: valid_4
+# text EN: Will it be sunny today? 
+# text RU: Сегодня будет солнечно ?
+# intent: weather/find
+# slots: 1:7:datetime, 15:22:weather/attribute
+1	Сегодня	weather/find	B-datetime
+2	будет	weather/find	O
+3	солнечно	weather/find	B-weather/attribute
+4	?	weather/find	O
+
+# id: valid_5
+# text EN: Is it cloudy today? 
+# text RU: Облачно ли сегодня?
+# intent: weather/find
+# slots: 1:7:weather/attribute, 12:18:datetime
+1	Облачно	weather/find	B-weather/attribute
+2	ли	weather/find	O
+3	сегодня	weather/find	B-datetime
+4	?	weather/find	O
+
+# id: valid_6
+# text EN: Cancel all my reminders. 
+# text RU: Отмени все мои напоминания.
+# intent: reminder/cancel_reminder
+# slots: 8:14:reference
+1	Отмени	reminder/cancel_reminder	O
+2	все	reminder/cancel_reminder	B-reference
+3	мои	reminder/cancel_reminder	I-reference
+4	напоминания	reminder/cancel_reminder	O
+5	.	reminder/cancel_reminder	O
+
+# id: valid_7
+# text EN: what alarms do I have set? 
+# text RU: какие будильники у меня установлены?
+# intent: alarm/show_alarms
+# slots: 
+1	какие	alarm/show_alarms	O
+2	будильники	alarm/show_alarms	O
+3	у	alarm/show_alarms	O
+4	меня	alarm/show_alarms	O
+5	установлены	alarm/show_alarms	O
+6	?	alarm/show_alarms	O
+
+# id: valid_8
+# text EN: I need an alarm for 5pm to remind me to take my medicine 
+# text RU: Поставь будильник на 5 часов вечера, чтобы он напомнил мне принять лекарство
+# intent: alarm/set_alarm
+# slots: 22:35:datetime, 60:76:reminder/todo
+1	Поставь	alarm/set_alarm	O
+2	будильник	alarm/set_alarm	O
+3	на	alarm/set_alarm	O
+4	5	alarm/set_alarm	B-datetime
+5	часов	alarm/set_alarm	I-datetime
+6	вечера	alarm/set_alarm	I-datetime
+7	,	alarm/set_alarm	O
+8	чтобы	alarm/set_alarm	O
+9	он	alarm/set_alarm	O
+10	напомнил	alarm/set_alarm	O
+11	мне	alarm/set_alarm	O
+12	принять	alarm/set_alarm	B-reminder/todo
+13	лекарство	alarm/set_alarm	I-reminder/todo
+
+# id: valid_9
+# text EN: set alarm for every 3 minutes 
+# text RU: поставь будильник на каждые 3 минуты
+# intent: alarm/set_alarm
+# slots: 22:36:recurring_datetime
+1	поставь	alarm/set_alarm	O
+2	будильник	alarm/set_alarm	O
+3	на	alarm/set_alarm	O
+4	каждые	alarm/set_alarm	B-recurring_datetime
+5	3	alarm/set_alarm	I-recurring_datetime
+6	минуты	alarm/set_alarm	I-recurring_datetime
+
+# id: valid_10
+# text EN: Is it going to storm today?  
+# text RU: Сегодня будет шторм?
+# intent: weather/find
+# slots: 1:7:datetime, 15:19:weather/attribute
+1	Сегодня	weather/find	B-datetime
+2	будет	weather/find	O
+3	шторм	weather/find	B-weather/attribute
+4	?	weather/find	O
+
+# id: valid_11
+# text EN: Cancel this afternoon's alarm. 
+# text RU: Отмени этот послеобеденный будильник.
+# intent: alarm/cancel_alarm
+# slots: 8:26:datetime
+1	Отмени	alarm/cancel_alarm	O
+2	этот	alarm/cancel_alarm	B-datetime
+3	послеобеденный	alarm/cancel_alarm	I-datetime
+4	будильник	alarm/cancel_alarm	O
+5	.	alarm/cancel_alarm	O
+
+# id: valid_12
+# text EN: Is it going to rain next week 
+# text RU: Будет ли дождь на следующей неделе
+# intent: weather/find
+# slots: 10:14:weather/attribute, 19:34:datetime
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	дождь	weather/find	B-weather/attribute
+4	на	weather/find	O
+5	следующей	weather/find	B-datetime
+6	неделе	weather/find	I-datetime
+
+# id: valid_13
+# text EN: What's next week's forecast? 
+# text RU: Какой прогноз на следующую неделю?
+# intent: weather/find
+# slots: 18:33:datetime
+1	Какой	weather/find	O
+2	прогноз	weather/find	O
+3	на	weather/find	O
+4	следующую	weather/find	B-datetime
+5	неделю	weather/find	I-datetime
+6	?	weather/find	O
+
+# id: valid_14
+# text EN: Read me my reminders. 
+# text RU: Прочитай мне текущие напоминания.
+# intent: reminder/show_reminders
+# slots: 14:20:reference
+1	Прочитай	reminder/show_reminders	O
+2	мне	reminder/show_reminders	O
+3	текущие	reminder/show_reminders	B-reference
+4	напоминания	reminder/show_reminders	O
+5	.	reminder/show_reminders	O
+
+# id: valid_15
+# text EN: Show all alarms 
+# text RU: Покажи все будильники
+# intent: alarm/show_alarms
+# slots: 8:10:reference
+1	Покажи	alarm/show_alarms	O
+2	все	alarm/show_alarms	B-reference
+3	будильники	alarm/show_alarms	O
+
+# id: valid_16
+# text EN: Alarm every five minutes for 20 minutes please 
+# text RU: Поставь будильник, чтобы он звенел каждые пять минут в течение 20 минут, пожалуйста
+# intent: alarm/set_alarm
+# slots: 36:72:recurring_datetime
+1	Поставь	alarm/set_alarm	O
+2	будильник	alarm/set_alarm	O
+3	,	alarm/set_alarm	O
+4	чтобы	alarm/set_alarm	O
+5	он	alarm/set_alarm	O
+6	звенел	alarm/set_alarm	O
+7	каждые	alarm/set_alarm	B-recurring_datetime
+8	пять	alarm/set_alarm	I-recurring_datetime
+9	минут	alarm/set_alarm	I-recurring_datetime
+10	в	alarm/set_alarm	I-recurring_datetime
+11	течение	alarm/set_alarm	I-recurring_datetime
+12	20	alarm/set_alarm	I-recurring_datetime
+13	минут,	alarm/set_alarm	I-recurring_datetime
+14	пожалуйста	alarm/set_alarm	O
+
+# id: valid_17
+# text EN: Change tomorrow mornings alarm to 6 am. 
+# text RU: Переставь завтрашний будильник на 6 утра.
+# intent: alarm/modify_alarm
+# slots: 11:20:datetime, 35:40:datetime
+1	Измени	alarm/modify_alarm	O
+2	завтрашний	alarm/modify_alarm	B-datetime
+3	будильник	alarm/modify_alarm	O
+4	на	alarm/modify_alarm	O
+5	6	alarm/modify_alarm	B-datetime
+6	утра	alarm/modify_alarm	I-datetime
+7	.	alarm/modify_alarm	O
+
+# id: valid_18
+# text EN: cancel all reminders 
+# text RU: отмени все напоминания
+# intent: reminder/cancel_reminder
+# slots: 8:10:reference
+1	отмени	reminder/cancel_reminder	O
+2	все	reminder/cancel_reminder	B-reference
+3	напоминания	reminder/cancel_reminder	O
+
+# id: valid_19
+# text EN: Show me my alarms 
+# text RU: Покажи мне текущие будильники
+# intent: alarm/show_alarms
+# slots: 12:18:reference
+1	Покажи	alarm/show_alarms	O
+2	мне	alarm/show_alarms	O
+3	текущие	alarm/show_alarms	B-reference
+4	будильники	alarm/show_alarms	O
+
+# id: valid_20
+# text EN: Cancel alarms 
+# text RU: Отмени будильники
+# intent: alarm/cancel_alarm
+# slots: 
+1	Отмени	alarm/cancel_alarm	O
+2	будильники	alarm/cancel_alarm	O
+
+# id: valid_21
+# text EN: Set alarm for 6 am tomorrow 
+# text RU: Поставь будильник на завтра в 6 утра
+# intent: alarm/set_alarm
+# slots: 22:36:datetime
+1	Поставь	alarm/set_alarm	O
+2	будильник	alarm/set_alarm	O
+3	на	alarm/set_alarm	O
+4	завтра	alarm/set_alarm	B-datetime
+5	в	alarm/set_alarm	I-datetime
+6	7	alarm/set_alarm	I-datetime
+7	утра	alarm/set_alarm	I-datetime
+
+# id: valid_22
+# text EN: Set alarm for 7 am tomorrow 
+# text RU: Поставь будильник на завтра в 7 утра
+# intent: alarm/set_alarm
+# slots: 22:36:datetime
+1	Поставь	alarm/set_alarm	O
+2	будильник	alarm/set_alarm	O
+3	на	alarm/set_alarm	O
+4	завтра	alarm/set_alarm	B-datetime
+5	в	alarm/set_alarm	I-datetime
+6	7	alarm/set_alarm	I-datetime
+7	утра	alarm/set_alarm	I-datetime
+
+# id: valid_23
+# text EN: set alarm for 6 am  
+# text RU: поставь будильник на 6 утра 
+# intent: alarm/set_alarm
+# slots: 22:27:datetime
+1	поставь	alarm/set_alarm	O
+2	будильник	alarm/set_alarm	O
+3	на	alarm/set_alarm	O
+4	6	alarm/set_alarm	B-datetime
+5	утра	alarm/set_alarm	I-datetime
+
+# id: valid_24
+# text EN: Remind me to pick up Liza 
+# text RU: Напомни мне забрать Лизу
+# intent: reminder/set_reminder
+# slots: 13:24:reminder/todo
+1	Напомни	reminder/set_reminder	O
+2	мне	reminder/set_reminder	O
+3	забрать	reminder/set_reminder	B-reminder/todo
+4	Лизу	reminder/set_reminder	I-reminder/todo
+
+# id: valid_25
+# text EN: show all alarms 
+# text RU: покажи все будильники
+# intent: alarm/show_alarms
+# slots: 8:10:reference
+1	покажи	alarm/show_alarms	O
+2	все	alarm/show_alarms	B-reference
+3	будильники	alarm/show_alarms	O
+
+# id: valid_26
+# text EN: Turn off all alarms 
+# text RU: Отключи все будильники
+# intent: alarm/cancel_alarm
+# slots: 9:11:reference
+1	Отключи	alarm/cancel_alarm	O
+2	все	alarm/cancel_alarm	B-reference
+3	будильники	alarm/cancel_alarm	O
+
+# id: valid_27
+# text EN: What are my reminders? 
+# text RU: Какие у меня напоминания?
+# intent: reminder/show_reminders
+# slots: 9:12:reference
+1	Какие	reminder/show_reminders	O
+2	у	reminder/show_reminders	O
+3	меня	reminder/show_reminders	B-reference
+4	напоминания	reminder/show_reminders	O
+5	?	reminder/show_reminders	O
+
+# id: valid_28
+# text EN: is it hot outside 
+# text RU: жарко ли на улице
+# intent: weather/find
+# slots: 1:5:weather/attribute, 13:17:location
+1	жарко	weather/find	B-weather/attribute
+2	ли	weather/find	O
+3	на	weather/find	O
+4	улице	weather/find	B-location
+
+# id: valid_29
+# text EN: Snooze alarm 
+# text RU: Отложи будильник
+# intent: alarm/snooze_alarm
+# slots: 
+1	Отложи	alarm/snooze_alarm	O
+2	будильник	alarm/snooze_alarm	O
+
+# id: valid_30
+# text EN: alarm on 
+# text RU: включи будильник
+# intent: alarm/set_alarm
+# slots: 
+1	включи	alarm/set_alarm	O
+2	будильник	alarm/set_alarm	O
+
+# id: valid_31
+# text EN: Set an alarm for 6 am on Wed 
+# text RU: Поставь будильник на 6 утра в среду
+# intent: alarm/set_alarm
+# slots: 22:35:datetime
+1	Поставь	alarm/set_alarm	O
+2	будильник	alarm/set_alarm	O
+3	на	alarm/set_alarm	O
+4	6	alarm/set_alarm	B-datetime
+5	утра	alarm/set_alarm	I-datetime
+6	в	alarm/set_alarm	I-datetime
+7	среду	alarm/set_alarm	I-datetime
+
+# id: valid_32
+# text EN: remind me to submit my lesson plans every monday by the end of the day 
+# text RU: напомни мне сдавать планы уроков каждый понедельник до конца дня
+# intent: reminder/set_reminder
+# slots: 13:32:reminder/todo, 34:64:recurring_datetime
+1	напомни	reminder/set_reminder	O
+2	мне	reminder/set_reminder	O
+3	сдавать	reminder/set_reminder	B-reminder/todo
+4	планы	reminder/set_reminder	I-reminder/todo
+5	уроков	reminder/set_reminder	I-reminder/todo
+6	каждый	reminder/set_reminder	B-recurring_datetime
+7	понедельник	reminder/set_reminder	I-recurring_datetime
+8	до	reminder/set_reminder	I-recurring_datetime
+9	конца	reminder/set_reminder	I-recurring_datetime
+10	дня	reminder/set_reminder	I-recurring_datetime
+
+# id: valid_33
+# text EN: how hot is it going to be today 
+# text RU: насколько жарко будет сегодня
+# intent: weather/find
+# slots: 11:15:weather/attribute, 23:29:datetime
+1	насколько	weather/find	O
+2	жарко	weather/find	B-weather/attribute
+3	будет	weather/find	O
+4	сегодня	weather/find	B-datetime
+
+# id: valid_34
+# text EN: Clear all set alarms.  
+# text RU: Очисти все установленные будильники. 
+# intent: alarm/cancel_alarm
+# slots: 8:10:reference
+1	Очисти	alarm/cancel_alarm	O
+2	все	alarm/cancel_alarm	B-reference
+3	установленные	alarm/cancel_alarm	O
+4	будильники	alarm/cancel_alarm	O
+5	.	alarm/cancel_alarm	O
+
+# id: valid_35
+# text EN: Show all alarms 
+# text RU: Покажи все будильники
+# intent: alarm/show_alarms
+# slots: 8:10:reference
+1	Покажи	alarm/show_alarms	O
+2	все	alarm/show_alarms	B-reference
+3	будильники	alarm/show_alarms	O
+
+# id: valid_36
+# text EN: Will it be sunny today? 
+# text RU: Сегодня будет солнечно ?
+# intent: weather/find
+# slots: 1:7:datetime, 15:22:weather/attribute
+1	Сегодня	weather/find	B-datetime
+2	будет	weather/find	O
+3	солнечно	weather/find	B-weather/attribute
+4	?	weather/find	O
+
+# id: valid_37
+# text EN: What is the humidity level today  
+# text RU: Какая влажность сегодня
+# intent: weather/find
+# slots: 7:15:weather/attribute, 17:23:datetime
+1	Какая	weather/find	O
+2	влажность	weather/find	B-weather/attribute
+3	сегодня	weather/find	B-datetime
+
+# id: valid_38
+# text EN: Cancel all reminders 
+# text RU: Отмени все напоминания
+# intent: reminder/cancel_reminder
+# slots: 8:10:reference
+1	Отмени	reminder/cancel_reminder	O
+2	все	reminder/cancel_reminder	B-reference
+3	напоминания	reminder/cancel_reminder	O
+
+# id: valid_39
+# text EN: set an alarm for fifteen minutes  
+# text RU: поставь будильник на пятнадцать минут
+# intent: alarm/set_alarm
+# slots: 22:37:datetime
+1	поставь	alarm/set_alarm	O
+2	будильник	alarm/set_alarm	O
+3	на	alarm/set_alarm	O
+4	пятнадцать	alarm/set_alarm	B-datetime
+5	минут	alarm/set_alarm	I-datetime
+
+# id: valid_40
+# text EN: Please set my alarm for 4am this Saturday. 
+# text RU: Пожалуйста, поставь мне будильник на 4 утра в эту субботу.
+# intent: alarm/set_alarm
+# slots: 21:23:reference, 38:57:datetime
+1	Пожалуйста,	alarm/set_alarm	O
+2	поставь	alarm/set_alarm	O
+3	мне	alarm/set_alarm	B-reference
+4	будильник	alarm/set_alarm	O
+5	на	alarm/set_alarm	O
+6	4	alarm/set_alarm	B-datetime
+7	утра	alarm/set_alarm	I-datetime
+8	в	alarm/set_alarm	I-datetime
+9	эту	alarm/set_alarm	I-datetime
+10	субботу	alarm/set_alarm	I-datetime
+11	.	alarm/set_alarm	O
+
+# id: valid_41
+# text EN: Give me a reminder for house closing at 10am tomorrow. 
+# text RU: Поставь напоминание закрыть дом завтра в 10 утра. 
+# intent: reminder/set_reminder
+# slots: 21:31:reminder/todo, 33:38:datetime, 42:48:datetime
+1	Поставь	reminder/set_reminder	O
+2	напоминание	reminder/set_reminder	O
+3	закрыть	reminder/set_reminder	B-reminder/todo
+4	дом	reminder/set_reminder	I-reminder/todo
+5	завтра	reminder/set_reminder	B-datetime
+6	в	reminder/set_reminder	O
+7	10	reminder/set_reminder	B-datetime
+8	утра	reminder/set_reminder	I-datetime
+9	.	reminder/set_reminder	O
+
+# id: valid_42
+# text EN: delete all alarms 
+# text RU: удали все будильники
+# intent: alarm/cancel_alarm
+# slots: 7:9:reference
+1	удали	alarm/cancel_alarm	O
+2	все	alarm/cancel_alarm	B-reference
+3	будильники	alarm/cancel_alarm	O
+
+# id: valid_43
+# text EN: How many alarms do I have set for Sunday? 
+# text RU: Сколько будильников у меня стоит на воскресенье?
+# intent: alarm/show_alarms
+# slots: 37:47:datetime
+1	Сколько	alarm/show_alarms	O
+2	будильников	alarm/show_alarms	O
+3	у	alarm/show_alarms	O
+4	меня	alarm/show_alarms	O
+5	стоит	alarm/show_alarms	O
+6	на	alarm/show_alarms	O
+7	воскресенье	alarm/show_alarms	B-datetime
+8	?	alarm/show_alarms	O
+
+# id: valid_44
+# text EN: show all alarms 
+# text RU: покажи все будильники
+# intent: alarm/show_alarms
+# slots: 8:10:reference
+1	покажи	alarm/show_alarms	O
+2	все	alarm/show_alarms	B-reference
+3	будильники	alarm/show_alarms	O
+
+# id: valid_45
+# text EN: Is it going to be sunny today? 
+# text RU: Сегодня будет солнечно ?
+# intent: weather/find
+# slots: 1:7:datetime, 15:22:weather/attribute
+1	Сегодня	weather/find	B-datetime
+2	будет	weather/find	O
+3	солнечно	weather/find	B-weather/attribute
+4	?	weather/find	O
+
+# id: valid_46
+# text EN: set alarm for 615am 
+# text RU: установи будильник на 6:15 утра
+# intent: alarm/set_alarm
+# slots: 23:31:datetime
+1	установи	alarm/set_alarm	O
+2	будильник	alarm/set_alarm	O
+3	на	alarm/set_alarm	O
+4	6:15	alarm/set_alarm	B-datetime
+5	утра	alarm/set_alarm	I-datetime
+
+# id: valid_47
+# text EN: Set two alarms for tomorrow morning 
+# text RU: Установи два будильника на завтрашнее утро
+# intent: alarm/set_alarm
+# slots: 28:42:datetime
+1	Установи	alarm/set_alarm	O
+2	два	alarm/set_alarm	O
+3	будильника	alarm/set_alarm	O
+4	на	alarm/set_alarm	O
+5	завтрашнее	alarm/set_alarm	B-datetime
+6	утро	alarm/set_alarm	I-datetime
+
+# id: valid_48
+# text EN: Turn off all alarms 
+# text RU: Отключи все будильники
+# intent: alarm/cancel_alarm
+# slots: 9:11:reference
+1	Отключи	alarm/cancel_alarm	O
+2	все	alarm/cancel_alarm	B-reference
+3	будильники	alarm/cancel_alarm	O
+
+# id: valid_49
+# text EN: What is the temperature like in Arkhangelsk right now? 
+# text RU: Какая температура в Архангельске прямо сейчас?
+# intent: weather/find
+# slots: 7:17:weather/attribute, 21:32:location, 40:45:datetime
+1	Какая	weather/find	O
+2	температура	weather/find	B-weather/attribute
+3	в	weather/find	O
+4	Архангельске	weather/find	B-location
+5	прямо	weather/find	O
+6	сейчас	weather/find	B-datetime
+7	?	weather/find	O
+
+# id: valid_50
+# text EN: Cancel my last reminder 
+# text RU: Отмени мое последнее напоминание
+# intent: reminder/cancel_reminder
+# slots: 8:20:reference
+1	Отмени	reminder/cancel_reminder	O
+2	мое	reminder/cancel_reminder	B-reference
+3	последнее	reminder/cancel_reminder	I-reference
+4	напоминание	reminder/cancel_reminder	O
+
+# id: valid_51
+# text EN: Set a reminder to go to the grocery store later 
+# text RU: Поставь напоминание сходить в продуктовый магазин позже
+# intent: reminder/set_reminder
+# slots: 21:49:reminder/todo, 51:55:datetime
+1	Поставь	reminder/set_reminder	O
+2	напоминание	reminder/set_reminder	O
+3	сходить	reminder/set_reminder	B-reminder/todo
+4	в	reminder/set_reminder	I-reminder/todo
+5	продуктовый	reminder/set_reminder	I-reminder/todo
+6	магазин	reminder/set_reminder	I-reminder/todo
+7	позже	reminder/set_reminder	B-datetime
+
+# id: valid_235_1
+# text EN: find a video game called Alyosha Popovich i Tugarin Zmey 
+# text RU: найди видеоигру под названием Алёша Попович и Тугарин Змей
+# intent: SearchCreativeWork
+# slots: 7:15:object_type, 31:58:object_name
+1	найди	SearchCreativeWork	O
+2	видеоигру	SearchCreativeWork	B-object_type
+3	под	SearchCreativeWork	O
+4	названием	SearchCreativeWork	O
+5	Алёша	SearchCreativeWork	B-object_name
+6	Попович	SearchCreativeWork	I-object_name
+7	и	SearchCreativeWork	I-object_name
+8	Тугарин	SearchCreativeWork	I-object_name
+9	Змей	SearchCreativeWork	I-object_name
+
+# id: valid_235_2
+# text EN: find a video game called Everlasting Summer 
+# text RU: найди видеоигру под названием Бесконечное Лето
+# intent: SearchCreativeWork
+# slots: 7:15:object_type, 31:46:object_name
+1	найди	SearchCreativeWork	O
+2	видеоигру	SearchCreativeWork	B-object_type
+3	под	SearchCreativeWork	O
+4	названием	SearchCreativeWork	O
+5	Бесконечное	SearchCreativeWork	B-object_name
+6	Лето	SearchCreativeWork	I-object_name
+
+# id: valid_261_1
+# text EN: Find movie schedules for Karo 5 Mars . 
+# text RU: Найди расписание фильмов в Каро 5 Марсе .
+# intent: SearchScreeningEvent
+# slots: 7:24:object_type, 28:39:location
+1	Найди	SearchScreeningEvent	O
+2	расписание	SearchScreeningEvent	B-object_type
+3	фильмов	SearchScreeningEvent	I-object_type
+4	в	SearchScreeningEvent	O
+5	Каро	SearchScreeningEvent	B-location
+6	5	SearchScreeningEvent	I-location
+7	Марсе	SearchScreeningEvent	I-location
+8	.	SearchScreeningEvent	O
+
+# id: valid_261_2
+# text EN: Find movie schedules for Pobeda . 
+# text RU: Найди расписание фильмов в Победе .
+# intent: SearchScreeningEvent
+# slots: 7:24:object_type, 28:33:location
+1	Найди	SearchScreeningEvent	O
+2	расписание	SearchScreeningEvent	B-object_type
+3	фильмов	SearchScreeningEvent	I-object_type
+4	в	SearchScreeningEvent	O
+5	Победе	SearchScreeningEvent	B-location
+6	.	SearchScreeningEvent	O
+
+# id: valid_295_1
+# text EN: When will Sinema Star be showing animated movies 
+# text RU: Когда в Синема Стар будут показывать анимационные фильмы
+# intent: SearchScreeningEvent
+# slots: 9:19:location, 38:56:movie_type
+1	Когда	SearchScreeningEvent	O
+2	в	SearchScreeningEvent	O
+3	Синема	SearchScreeningEvent	B-location
+4	Стар	SearchScreeningEvent	I-location
+5	будут	SearchScreeningEvent	O
+6	показывать	SearchScreeningEvent	O
+7	анимационные	SearchScreeningEvent	B-movie_type
+8	фильмы	SearchScreeningEvent	I-movie_type
+
+# id: valid_265_1
+# text EN: Dmitriy and Anna want to go to the best osteria steakhouse in the city center, St. Petersburg, this afternoon 
+# text RU: Дмитрий и Анна хотят отправиться в лучший стейкхаус в центре города, Петербуг, сегодня днём
+# intent: BookRestaurant
+# slots: 1:14:party_size_description, 36:41:sort, 43:51:restaurant_type, 55:67:location, 70:77:location, 88:91:datetime
+1	Дмитрий	BookRestaurant	B-party_size_description
+2	и	BookRestaurant	I-party_size_description
+3	Анна	BookRestaurant	I-party_size_description
+4	хотят	BookRestaurant	O
+5	отправиться	BookRestaurant	O
+6	в	BookRestaurant	O
+7	лучший	BookRestaurant	B-sort
+8	стейкхаус	BookRestaurant	B-restaurant_type
+9	в	BookRestaurant	O
+10	центре	BookRestaurant	B-location
+11	города	BookRestaurant	I-location
+12	,	BookRestaurant	O
+13	Петербуг	BookRestaurant	B-location
+14	,	BookRestaurant	O
+15	сегодня	BookRestaurant	O
+16	днём	BookRestaurant	B-datetime
+
+# id: valid_300_1
+# text EN: Add tune to my Generalnaya vesennyaya uborka playlist 
+# text RU: Добавь мелодию в мой плейлист Генеральная Весенняя Уборка
+# intent: AddToPlaylist
+# slots: 8:14:music_item, 18:20:reference, 31:57:playlist
+1	Добавь	AddToPlaylist	O
+2	мелодию	AddToPlaylist	B-music_item
+3	в	AddToPlaylist	O
+4	мой	AddToPlaylist	B-reference
+5	плейлист	AddToPlaylist	O
+6	Генеральная	AddToPlaylist	B-playlist
+7	Весенняя	AddToPlaylist	I-playlist
+8	Уборка	AddToPlaylist	I-playlist
+
+# id: valid_283_1
+# text EN: add Egor Krid  to my Tantsy posle kholodov playlist 
+# text RU: добавь Егора Крида в мой плейлист Танцы после Холодов
+# intent: AddToPlaylist
+# slots: 8:18:artist, 22:24:reference, 35:53:playlist
+1	добавь	AddToPlaylist	O
+2	Егора	AddToPlaylist	B-artist
+3	Крида	AddToPlaylist	I-artist
+4	в	AddToPlaylist	O
+5	мой	AddToPlaylist	B-reference
+6	плейлист	AddToPlaylist	O
+7	Танцы	AddToPlaylist	B-playlist
+8	после	AddToPlaylist	I-playlist
+9	Холодов	AddToPlaylist	I-playlist
+
+# id: valid_288_1
+# text EN: Please put an album by Noize MC on my Vesennie novinki playlist 
+# text RU: Пожалуйста, добавь альбом Noize MC в мой плейлист Весенние Новинки
+# intent: AddToPlaylist
+# slots: 20:25:music_item, 27:34:artist, 38:40:reference, 51:66:playlist
+1	Пожалуйста	AddToPlaylist	O
+2	,	AddToPlaylist	O
+3	добавь	AddToPlaylist	O
+4	альбом	AddToPlaylist	B-music_item
+5	Noize	AddToPlaylist	B-artist
+6	MC	AddToPlaylist	I-artist
+7	в	AddToPlaylist	O
+8	мой	AddToPlaylist	B-reference
+9	плейлист	AddToPlaylist	O
+10	Весенние	AddToPlaylist	B-playlist
+11	Новинки	AddToPlaylist	I-playlist
+
+
+
+# id: valid_273_1
+# text EN: add this tune to my Vesennie noty playlist 
+# text RU: добавь эту мелодию в мой плейлист Весенние Ноты
+# intent: AddToPlaylist
+# slots: 12:18:music_item, 22:24:reference, 35:47:playlist
+1	добавь	AddToPlaylist	O
+2	эту	AddToPlaylist	O
+3	мелодию	AddToPlaylist	B-music_item
+4	в	AddToPlaylist	O
+5	мой	AddToPlaylist	B-reference
+6	плейлист	AddToPlaylist	O
+7	Весенние	AddToPlaylist	B-playlist
+8	Ноты	AddToPlaylist	I-playlist
+
+# id: valid_300_2
+# text EN: Add tune to my CHtoby pochuvstvovat sebya silnym playlist 
+# text RU: Добавь мелодию в мой плейлист Чтобы почувствовать себя сильным
+# intent: AddToPlaylist
+# slots: 8:14:music_item, 18:20:reference, 31:62:playlist
+1	Добавь	AddToPlaylist	O
+2	мелодию	AddToPlaylist	B-music_item
+3	в	AddToPlaylist	O
+4	мой	AddToPlaylist	B-reference
+5	плейлист	AddToPlaylist	O
+6	Чтобы	AddToPlaylist	B-playlist
+7	почувствовать	AddToPlaylist	I-playlist
+8	себя	AddToPlaylist	I-playlist
+9	сильным	AddToPlaylist	I-playlist
+
+# id: valid_297_1
+# text EN: show book name Two Captains 
+# text RU: покажи книгу под названием Два капитана
+# intent: SearchCreativeWork
+# slots: 8:12:object_type, 28:39:object_name
+1	покажи	SearchCreativeWork	O
+2	книгу	SearchCreativeWork	B-object_type
+3	под	SearchCreativeWork	O
+4	названием	SearchCreativeWork	O
+5	Два	SearchCreativeWork	B-object_name
+6	капитана	SearchCreativeWork	I-object_name
+
+# id: valid_297_2
+# text EN: show book name Eugene Onegin 
+# text RU: покажи книгу под названием Евгений Онегин
+# intent: SearchCreativeWork
+# slots: 8:12:object_type, 28:41:object_name
+1	покажи	SearchCreativeWork	O
+2	книгу	SearchCreativeWork	B-object_type
+3	под	SearchCreativeWork	O
+4	названием	SearchCreativeWork	O
+5	Евгений	SearchCreativeWork	B-object_name
+6	Онегин	SearchCreativeWork	I-object_name
+
+# id: valid_237_1
+# text EN: For Idiot I rate it three stars 
+# text RU: Мастеру и Маргарите я ставлю три звезды
+# intent: RateBook
+# slots: 1:19:object_name, 30:32:rating_value, 34:39:rating_unit
+1	Мастеру	RateBook	B-object_name
+2	и	RateBook	I-object_name
+3	Маргарите	RateBook	I-object_name
+4	я	RateBook	O
+5	ставлю	RateBook	O
+6	три	RateBook	B-rating_value
+7	звезды	RateBook	B-rating_unit
+
+# id: valid_297_3
+# text EN: show book name War and Peace 
+# text RU: покажи книгу под названием Война и Мир
+# intent: SearchCreativeWork
+# slots: 8:12:object_type, 28:38:object_name
+1	покажи	SearchCreativeWork	O
+2	книгу	SearchCreativeWork	B-object_type
+3	под	SearchCreativeWork	O
+4	названием	SearchCreativeWork	O
+5	Война	SearchCreativeWork	B-object_name
+6	и	SearchCreativeWork	I-object_name
+7	Мир	SearchCreativeWork	I-object_name
+
+# id: valid_282_1
+# text EN: Rate Lefty 5 points 
+# text RU: Оцени Левшу 5 баллами
+# intent: RateBook
+# slots: 7:11:object_name, 13:13:rating_value, 15:21:rating_unit
+1	Оцени	RateBook	O
+2	Левшу	RateBook	B-object_name
+3	5	RateBook	B-rating_value
+4	баллами	RateBook	B-rating_unit
+
+# id: valid_282_2
+# text EN: Rate The Twelve Chairs 5 points 
+# text RU: Оцени Двенадцать стульев 5 баллами
+# intent: RateBook
+# slots: 7:24:object_name, 26:26:rating_value, 28:34:rating_unit
+1	Оцени	RateBook	O
+2	Двенадцать	RateBook	B-object_name
+3	стульев	RateBook	I-object_name
+4	5	RateBook	B-rating_value
+5	баллами	RateBook	B-rating_unit
+
+# id: valid_297_4
+# text EN: show book name Doctor Zhivago 
+# text RU: покажи книгу под названием Доктор Живаго
+# intent: SearchCreativeWork
+# slots: 8:12:object_type, 28:40:object_name
+1	покажи	SearchCreativeWork	O
+2	книгу	SearchCreativeWork	B-object_type
+3	под	SearchCreativeWork	O
+4	названием	SearchCreativeWork	O
+5	Доктор	SearchCreativeWork	B-object_name
+6	Живаго	SearchCreativeWork	I-object_name
+
+# id: valid_297_5
+# text EN: show book name Fables 
+# text RU: покажи книгу под названием Басни
+# intent: SearchCreativeWork
+# slots: 8:12:object_type, 28:32:object_name
+1	покажи	SearchCreativeWork	O
+2	книгу	SearchCreativeWork	B-object_type
+3	под	SearchCreativeWork	O
+4	названием	SearchCreativeWork	O
+5	Басни	SearchCreativeWork	B-object_name
+
+# id: valid_297_6
+# text EN: show book name Crime and Punishment 
+# text RU: покажи книгу под названием Преступление и Наказание
+# intent: SearchCreativeWork
+# slots: 8:12:object_type, 28:51:object_name
+1	покажи	SearchCreativeWork	O
+2	книгу	SearchCreativeWork	B-object_type
+3	под	SearchCreativeWork	O
+4	названием	SearchCreativeWork	O
+5	Преступление	SearchCreativeWork	B-object_name
+6	и	SearchCreativeWork	I-object_name
+7	Наказание	SearchCreativeWork	I-object_name
+
+# id: valid_282_3
+# text EN: Rate Ruslan and Lyudmila 5 points 
+# text RU: Оцени Руслана и Людмилу 5 баллами
+# intent: RateBook
+# slots: 7:23:object_name, 25:25:rating_value, 27:33:rating_unit
+1	Оцени	RateBook	O
+2	Руслана	RateBook	B-object_name
+3	и	RateBook	I-object_name
+4	Людмилу	RateBook	I-object_name
+5	5	RateBook	B-rating_value
+6	баллами	RateBook	B-rating_unit
+
+# id: valid_237_2
+# text EN: For Idiot I rate it three stars 
+# text RU: Анне Карениной я ставлю три звезды
+# intent: RateBook
+# slots: 1:14:object_name, 25:27:rating_value, 29:34:rating_unit
+1	Анне	RateBook	B-object_name
+2	Карениной	RateBook	I-object_name
+3	я	RateBook	O
+4	ставлю	RateBook	O
+5	три	RateBook	B-rating_value
+6	звезды	RateBook	B-rating_unit
+
+# id: valid_237_3
+# text EN: For Idiot I rate it three stars 
+# text RU: Ревизору я ставлю три звезды
+# intent: RateBook
+# slots: 1:8:object_name, 19:21:rating_value, 23:28:rating_unit
+1	Ревизору	RateBook	B-object_name
+2	я	RateBook	O
+3	ставлю	RateBook	O
+4	три	RateBook	B-rating_value
+5	звезды	RateBook	B-rating_unit
+
+# id: valid_297_7
+# text EN: show book name The Brothers Karamazov 
+# text RU: покажи книгу под названием Братья Карамазовы
+# intent: SearchCreativeWork
+# slots: 8:12:object_type, 28:44:object_name
+1	покажи	SearchCreativeWork	O
+2	книгу	SearchCreativeWork	B-object_type
+3	под	SearchCreativeWork	O
+4	названием	SearchCreativeWork	O
+5	Братья	SearchCreativeWork	B-object_name
+6	Карамазовы	SearchCreativeWork	I-object_name
+
+# id: valid_226_1
+# text EN: Find a trailer called Nebo . 
+# text RU: Найди трейлер под названием Небо .
+# intent: SearchCreativeWork
+# slots: 7:13:object_type, 29:32:object_name
+1	Найди	SearchCreativeWork	O
+2	трейлер	SearchCreativeWork	B-object_type
+3	под	SearchCreativeWork	O
+4	названием	SearchCreativeWork	O
+5	Небо	SearchCreativeWork	B-object_name
+
+# id: valid_226_2
+# text EN: Find a trailer called 28 panfilovtsev . 
+# text RU: Найди трейлер под названием 28 панфиловцев .
+# intent: SearchCreativeWork
+# slots: 7:13:object_type, 29:42:object_name
+1	Найди	SearchCreativeWork	O
+2	трейлер	SearchCreativeWork	B-object_type
+3	под	SearchCreativeWork	O
+4	названием	SearchCreativeWork	O
+5	28	SearchCreativeWork	B-object_name
+6	панфиловцев	SearchCreativeWork	I-object_name
+
+# id: valid_226_3
+# text EN: Find a trailer called Bitva za Sevastopol . 
+# text RU: Найди трейлер под названием Битва за Севастополь .
+# intent: SearchCreativeWork
+# slots: 7:13:object_type, 29:48:object_name
+1	Найди	SearchCreativeWork	O
+2	трейлер	SearchCreativeWork	B-object_type
+3	под	SearchCreativeWork	O
+4	названием	SearchCreativeWork	O
+5	Битва	SearchCreativeWork	B-object_name
+6	за	SearchCreativeWork	I-object_name
+7	Севастополь	SearchCreativeWork	I-object_name
+
+# id: valid_226_4
+# text EN: Find a trailer called Salyut-7 . 
+# text RU: Найди трейлер под названием Салют-7 .
+# intent: SearchCreativeWork
+# slots: 7:13:object_type, 29:35:object_name
+1	Найди	SearchCreativeWork	O
+2	трейлер	SearchCreativeWork	B-object_type
+3	под	SearchCreativeWork	O
+4	названием	SearchCreativeWork	O
+5	Салют-7	SearchCreativeWork	B-object_name
+
+# id: valid_226_5
+# text EN: Find a trailer called CHinovnik . 
+# text RU: Найди трейлер под названием Чиновник .
+# intent: SearchCreativeWork
+# slots: 7:13:object_type, 29:36:object_name
+1	Найди	SearchCreativeWork	O
+2	трейлер	SearchCreativeWork	B-object_type
+3	под	SearchCreativeWork	O
+4	названием	SearchCreativeWork	O
+5	Чиновник	SearchCreativeWork	B-object_name
+
+# id: valid_226_6
+# text EN: Find a trailer called Monakh i bes . 
+# text RU: Найди трейлер под названием Монах и Бес .
+# intent: SearchCreativeWork
+# slots: 7:13:object_type, 29:39:object_name
+1	Найди	SearchCreativeWork	O
+2	трейлер	SearchCreativeWork	B-object_type
+3	под	SearchCreativeWork	O
+4	названием	SearchCreativeWork	O
+5	Монах	SearchCreativeWork	B-object_name
+6	и	SearchCreativeWork	I-object_name
+7	Бес	SearchCreativeWork	I-object_name
+
+# id: valid_256_1
+# text EN: what time is Prizrak showing at Kinomax 
+# text RU: в какое время Призрака показывают в Киномаксе
+# intent: SearchScreeningEvent
+# slots: 15:22:movie_name, 37:45:location
+1	в	SearchScreeningEvent	O
+2	какое	SearchScreeningEvent	O
+3	время	SearchScreeningEvent	O
+4	Призрака	SearchScreeningEvent	B-movie_name
+5	показывают	SearchScreeningEvent	O
+6	в	SearchScreeningEvent	O
+7	Киномаксе	SearchScreeningEvent	B-location
+
+# id: valid_226_7
+# text EN: Find a trailer called KHolop . 
+# text RU: Найди трейлер под названием Холоп .
+# intent: SearchCreativeWork
+# slots: 7:13:object_type, 29:33:object_name
+1	Найди	SearchCreativeWork	O
+2	трейлер	SearchCreativeWork	B-object_type
+3	под	SearchCreativeWork	O
+4	названием	SearchCreativeWork	O
+5	Холоп	SearchCreativeWork	B-object_name
+
+# id: valid_215_1
+# text EN: book at Nekrasov on Oct. 17 
+# text RU: забронируй Некрасова на 17 октября
+# intent: BookRestaurant
+# slots: 12:20:restaurant_name, 25:34:datetime
+1	забронируй	BookRestaurant	O
+2	Некрасова	BookRestaurant	B-restaurant_name
+3	на	BookRestaurant	O
+4	17	BookRestaurant	B-datetime
+5	октября	BookRestaurant	I-datetime
+
+# id: valid_222_1
+# text EN: book a table in Bristol neighboring the area 
+# text RU: забронируй стол в Бристоле, рядом с этим районом
+# intent: BookRestaurant
+# slots: 19:27:restaurant_name, 29:48:location
+1	забронируй	BookRestaurant	O
+2	стол	BookRestaurant	O
+3	в	BookRestaurant	O
+4	Бристоле,	BookRestaurant	B-restaurant_name
+5	рядом	BookRestaurant	B-location
+6	с	BookRestaurant	I-location
+7	этим	BookRestaurant	I-location
+8	районом	BookRestaurant	I-location
+
+# id: valid_252_1
+# text EN: I want to find the show Orel i reshka . 
+# text RU: Я хочу найти шоу Орёл и Решка .
+# intent: SearchCreativeWork
+# slots: 14:16:object_type, 18:29:object_name
+1	Я	SearchCreativeWork	O
+2	хочу	SearchCreativeWork	O
+3	найти	SearchCreativeWork	O
+4	шоу	SearchCreativeWork	B-object_type
+5	Орёл	SearchCreativeWork	B-object_name
+6	и	SearchCreativeWork	I-object_name
+7	Решка	SearchCreativeWork	I-object_name
+8	.	SearchCreativeWork	O
+
+# id: valid_252_2
+# text EN: I want to find the show Luchshe vsekh! . 
+# text RU: Я хочу найти шоу Лучше всех! .
+# intent: SearchCreativeWork
+# slots: 14:16:object_type, 18:28:object_name
+1	Я	SearchCreativeWork	O
+2	хочу	SearchCreativeWork	O
+3	найти	SearchCreativeWork	O
+4	шоу	SearchCreativeWork	B-object_type
+5	Лучше	SearchCreativeWork	B-object_name
+6	всех!	SearchCreativeWork	I-object_name
+7	.	SearchCreativeWork	O
+
+# id: valid_252_3
+# text EN: I want to find the show Golos. Deti . 
+# text RU: Я хочу найти шоу Голос. Дети .
+# intent: SearchCreativeWork
+# slots: 14:16:object_type, 18:28:object_name
+1	Я	SearchCreativeWork	O
+2	хочу	SearchCreativeWork	O
+3	найти	SearchCreativeWork	O
+4	шоу	SearchCreativeWork	B-object_type
+5	Голос.	SearchCreativeWork	B-object_name
+6	Дети	SearchCreativeWork	I-object_name
+7	.	SearchCreativeWork	O
+
+# id: valid_252_4
+# text EN: I want to find the show Golos . 
+# text RU: Я хочу найти шоу Голос .
+# intent: SearchCreativeWork
+# slots: 14:16:object_type, 18:22:object_name
+1	Я	SearchCreativeWork	O
+2	хочу	SearchCreativeWork	O
+3	найти	SearchCreativeWork	O
+4	шоу	SearchCreativeWork	B-object_type
+5	Голос	SearchCreativeWork	B-object_name
+6	.	SearchCreativeWork	O
+
+# id: valid_252_5
+# text EN: I want to find the show Improvizatsiya . 
+# text RU: Я хочу найти шоу Импровизация .
+# intent: SearchCreativeWork
+# slots: 14:16:object_type, 18:29:object_name
+1	Я	SearchCreativeWork	O
+2	хочу	SearchCreativeWork	O
+3	найти	SearchCreativeWork	O
+4	шоу	SearchCreativeWork	B-object_type
+5	Импровизация	SearchCreativeWork	B-object_name
+6	.	SearchCreativeWork	O
+
+
+# id: valid_206_1
+# text EN: Show me the TV show Tantsy 
+# text RU: Покажи мне телешоу Танцы
+# intent: SearchCreativeWork
+# slots: 12:18:object_type, 20:24:object_name
+1	Покажи	SearchCreativeWork	O
+2	мне	SearchCreativeWork	O
+3	телешоу	SearchCreativeWork	B-object_type
+4	Танцы	SearchCreativeWork	B-object_name
+
+# id: valid_262_1
+# text EN: Find a TV series called Uralskie pelmeni . 
+# text RU: Найди ТВ шоу под названием Уральские Пельмени .
+# intent: SearchCreativeWork
+# slots: 7:12:object_type, 28:45:object_name
+1	Найди	SearchCreativeWork	O
+2	ТВ	SearchCreativeWork	B-object_type
+3	шоу	SearchCreativeWork	I-object_type
+4	под	SearchCreativeWork	O
+5	названием	SearchCreativeWork	O
+6	Уральские	SearchCreativeWork	B-object_name
+7	Пельмени	SearchCreativeWork	I-object_name
+8	.	SearchCreativeWork	O
+
+# id: valid_206_2
+# text EN: Show me the TV show Revizorro 
+# text RU: Покажи мне телешоу Ревизорро
+# intent: SearchCreativeWork
+# slots: 12:18:object_type, 20:28:object_name
+1	Покажи	SearchCreativeWork	O
+2	мне	SearchCreativeWork	O
+3	телешоу	SearchCreativeWork	B-object_type
+4	Ревизорро	SearchCreativeWork	B-object_name
+
+# id: valid_262_2
+# text EN: Find a TV series called Spokoynoy nochi, malyshi! . 
+# text RU: Найди ТВ шоу под названием Спокойной ночи, малыши! .
+# intent: SearchCreativeWork
+# slots: 7:12:object_type, 28:50:object_name
+1	Найди	SearchCreativeWork	O
+2	ТВ	SearchCreativeWork	B-object_type
+3	шоу	SearchCreativeWork	I-object_type
+4	под	SearchCreativeWork	O
+5	названием	SearchCreativeWork	O
+6	Спокойной	SearchCreativeWork	B-object_name
+7	ночи,	SearchCreativeWork	I-object_name
+8	малыши!	SearchCreativeWork	I-object_name
+9	.	SearchCreativeWork	O
+
+# id: valid_262_3
+# text EN: Find a TV series called 60 minut . 
+# text RU: Найди ТВ шоу под названием 60 минут .
+# intent: SearchCreativeWork
+# slots: 7:12:object_type, 28:35:object_name
+1	Найди	SearchCreativeWork	O
+2	ТВ	SearchCreativeWork	B-object_type
+3	шоу	SearchCreativeWork	I-object_type
+4	под	SearchCreativeWork	O
+5	названием	SearchCreativeWork	O
+6	60	SearchCreativeWork	B-object_name
+7	минут	SearchCreativeWork	I-object_name
+8	.	SearchCreativeWork	O
+
+# id: valid_206_3
+# text EN: Show me the TV show Udivitelnye lyudi 
+# text RU: Покажи мне телешоу Удивительные Люди
+# intent: SearchCreativeWork
+# slots: 12:18:object_type, 20:36:object_name
+1	Покажи	SearchCreativeWork	O
+2	мне	SearchCreativeWork	O
+3	телешоу	SearchCreativeWork	B-object_type
+4	Удивительные	SearchCreativeWork	B-object_name
+5	Люди	SearchCreativeWork	I-object_name
+
+# id: valid_252_6
+# text EN: I want to find the show Orel i reshka. SHoping . 
+# text RU: Я хочу найти шоу Орёл и решка. Шопинг .
+# intent: SearchCreativeWork
+# slots: 14:16:object_type, 18:37:object_name
+1	Я	SearchCreativeWork	O
+2	хочу	SearchCreativeWork	O
+3	найти	SearchCreativeWork	O
+4	шоу	SearchCreativeWork	B-object_type
+5	Орёл	SearchCreativeWork	B-object_name
+6	и	SearchCreativeWork	I-object_name
+7	решка.	SearchCreativeWork	I-object_name
+8	Шопинг	SearchCreativeWork	I-object_name
+9	.	SearchCreativeWork	O
+
+# id: valid_206_4
+# text EN: Show me the TV show Toch-v-toch 
+# text RU: Покажи мне телешоу Точь-в-точь
+# intent: SearchCreativeWork
+# slots: 12:18:object_type, 20:30:object_name
+1	Покажи	SearchCreativeWork	O
+2	мне	SearchCreativeWork	O
+3	телешоу	SearchCreativeWork	B-object_type
+4	Точь-в-точь	SearchCreativeWork	B-object_name
+
+# id: valid_206_5
+# text EN: Show me the TV show Patsanki 
+# text RU: Покажи мне телешоу Пацанки
+# intent: SearchCreativeWork
+# slots: 12:18:object_type, 20:26:object_name
+1	Покажи	SearchCreativeWork	O
+2	мне	SearchCreativeWork	O
+3	телешоу	SearchCreativeWork	B-object_type
+4	Пацанки	SearchCreativeWork	B-object_name
+
+# id: valid_206_6
+# text EN: Show me the TV show Vecherniy Urgant 
+# text RU: Покажи мне телешоу Вечерний Ургант
+# intent: SearchCreativeWork
+# slots: 12:18:object_type, 20:34:object_name
+1	Покажи	SearchCreativeWork	O
+2	мне	SearchCreativeWork	O
+3	телешоу	SearchCreativeWork	B-object_type
+4	Вечерний	SearchCreativeWork	B-object_name
+5	Ургант	SearchCreativeWork	I-object_name
+
+# id: valid_262_4
+# text EN: Find a TV series called Svoya igra . 
+# text RU: Найди ТВ шоу под названием Своя Игра .
+# intent: SearchCreativeWork
+# slots: 7:12:object_type, 28:36:object_name
+1	Найди	SearchCreativeWork	O
+2	ТВ	SearchCreativeWork	B-object_type
+3	шоу	SearchCreativeWork	I-object_type
+4	под	SearchCreativeWork	O
+5	названием	SearchCreativeWork	O
+6	Своя	SearchCreativeWork	B-object_name
+7	Игра	SearchCreativeWork	I-object_name
+8	.	SearchCreativeWork	O
+
+# id: valid_252_7
+# text EN: I want to find the show Naedine so vsemi . 
+# text RU: Я хочу найти шоу Наедине со всеми .
+# intent: SearchCreativeWork
+# slots: 14:16:object_type, 18:33:object_name
+1	Я	SearchCreativeWork	O
+2	хочу	SearchCreativeWork	O
+3	найти	SearchCreativeWork	O
+4	шоу	SearchCreativeWork	B-object_type
+5	Наедине	SearchCreativeWork	B-object_name
+6	со	SearchCreativeWork	I-object_name
+7	всеми	SearchCreativeWork	I-object_name
+8	.	SearchCreativeWork	O
+
+# id: valid_252_8
+# text EN: I want to find the show Odin v odin . 
+# text RU: Я хочу найти шоу Один в Один .
+# intent: SearchCreativeWork
+# slots: 14:16:object_type, 18:21:object_name
+1	Я	SearchCreativeWork	O
+2	хочу	SearchCreativeWork	O
+3	найти	SearchCreativeWork	O
+4	шоу	SearchCreativeWork	B-object_type
+5	Один	SearchCreativeWork	B-object_name
+6	в	SearchCreativeWork	I-object_name
+7	Один	SearchCreativeWork	I-object_name
+8	.	SearchCreativeWork	O
+
+# id: valid_262_5
+# text EN: Find a TV series called ZHdi menya . 
+# text RU: Найди ТВ шоу под названием Жди меня .
+# intent: SearchCreativeWork
+# slots: 7:12:object_type, 28:35:object_name
+1	Найди	SearchCreativeWork	O
+2	ТВ	SearchCreativeWork	B-object_type
+3	шоу	SearchCreativeWork	I-object_type
+4	под	SearchCreativeWork	O
+5	названием	SearchCreativeWork	O
+6	Жди	SearchCreativeWork	B-object_name
+7	меня	SearchCreativeWork	I-object_name
+8	.	SearchCreativeWork	O
+
+# id: valid_262_6
+# text EN: Find a TV series called Voskresnyy vecher s Vladimirom Solovevym . 
+# text RU: Найди ТВ шоу под названием Воскресный Вечер с Владимиром Соловьевым .
+# intent: SearchCreativeWork
+# slots: 7:12:object_type, 28:67:object_name
+1	Найди	SearchCreativeWork	O
+2	ТВ	SearchCreativeWork	B-object_type
+3	шоу	SearchCreativeWork	I-object_type
+4	под	SearchCreativeWork	O
+5	названием	SearchCreativeWork	O
+6	Воскресный	SearchCreativeWork	B-object_name
+7	Вечер	SearchCreativeWork	I-object_name
+8	с	SearchCreativeWork	I-object_name
+9	Владимиром	SearchCreativeWork	I-object_name
+10	Соловьевым	SearchCreativeWork	I-object_name
+11	.	SearchCreativeWork	O
+
+# id: valid_252_9
+# text EN: I want to find the show CHto? Gde? Kogda? . 
+# text RU: Я хочу найти шоу Что? Где? Когда? .
+# intent: SearchCreativeWork
+# slots: 14:16:object_type, 18:33:object_name
+1	Я	SearchCreativeWork	O
+2	хочу	SearchCreativeWork	O
+3	найти	SearchCreativeWork	O
+4	шоу	SearchCreativeWork	B-object_type
+5	Что?	SearchCreativeWork	B-object_name
+6	Где?	SearchCreativeWork	I-object_name
+7	Когда?	SearchCreativeWork	I-object_name
+8	.	SearchCreativeWork	O
+
+# id: valid_252_10
+# text EN: I want to find the show Vzveshennye i schastlivye lyudi . 
+# text RU: Я хочу найти шоу Взвешенные и Счастливые Люди .
+# intent: SearchCreativeWork
+# slots: 14:16:object_type, 18:45:object_name
+1	Я	SearchCreativeWork	O
+2	хочу	SearchCreativeWork	O
+3	найти	SearchCreativeWork	O
+4	шоу	SearchCreativeWork	B-object_type
+5	Взвешенные	SearchCreativeWork	B-object_name
+6	и	SearchCreativeWork	I-object_name
+7	Счастливые	SearchCreativeWork	I-object_name
+8	Люди	SearchCreativeWork	I-object_name
+9	.	SearchCreativeWork	O
+
+# id: valid_260_1
+# text EN: On January the thirteenth, 2037 what will it be like in the village of Belyashi, Altai Republico 
+# text RU: 13 Января 2037 года каким будет день в селе Беляши, Республика Алтай
+# intent: weather/find
+# slots: 1:2:datetime, 4:19:datetime, 40:50:location, 53:68:location
+1	13	weather/find	B-datetime
+2	Января	weather/find	B-datetime
+3	2037	weather/find	I-datetime
+4	года	weather/find	I-datetime
+5	каким	weather/find	O
+6	будет	weather/find	O
+7	день	weather/find	O
+8	в	weather/find	O
+9	селе	weather/find	B-location
+10	Беляши	weather/find	I-location
+11	,	weather/find	O
+12	Республика	weather/find	B-location
+13	Алтай	weather/find	I-location
+
+# id: valid_202_1
+# text EN: Will it be snowy at the current position by February 3 ? 
+# text RU: Будет ли снег в текущем местоположении 3 Февраля ?
+# intent: weather/find
+# slots: 10:13:condition_description, 17:38:location, 40:40:datetime, 42:48:datetime
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	снег	weather/find	B-condition_description
+4	в	weather/find	O
+5	текущем	weather/find	B-location
+6	местоположении	weather/find	I-location
+7	3	weather/find	B-datetime
+8	Февраля	weather/find	B-datetime
+9	?	weather/find	O
+
+# id: valid_260_2
+# text EN: On March the thirteenth, 2037 what will it be like in the village of Belyashi, Altai Republico 
+# text RU: 13 Марта 2037 года каким будет день в селе Беляши, Республика Алтай
+# intent: weather/find
+# slots: 1:2:datetime, 4:18:datetime, 39:49:location, 52:67:location
+1	13	weather/find	B-datetime
+2	Марта	weather/find	B-datetime
+3	2037	weather/find	I-datetime
+4	года	weather/find	I-datetime
+5	каким	weather/find	O
+6	будет	weather/find	O
+7	день	weather/find	O
+8	в	weather/find	O
+9	селе	weather/find	B-location
+10	Беляши	weather/find	I-location
+11	,	weather/find	O
+12	Республика	weather/find	B-location
+13	Алтай	weather/find	I-location
+
+# id: valid_260_3
+# text EN: On April the thirteenth, 2037 what will it be like in the village of Belyashi, Altai Republico 
+# text RU: 13 Апреля 2037 года каким будет день в селе Беляши, Республика Алтай
+# intent: weather/find
+# slots: 1:2:datetime, 4:19:datetime, 40:50:location, 53:68:location
+1	13	weather/find	B-datetime
+2	Апреля	weather/find	B-datetime
+3	2037	weather/find	I-datetime
+4	года	weather/find	I-datetime
+5	каким	weather/find	O
+6	будет	weather/find	O
+7	день	weather/find	O
+8	в	weather/find	O
+9	селе	weather/find	B-location
+10	Беляши	weather/find	I-location
+11	,	weather/find	O
+12	Республика	weather/find	B-location
+13	Алтай	weather/find	I-location
+
+# id: valid_202_2
+# text EN: Will it be snowy at the current position by May 3 ? 
+# text RU: Будет ли снег в текущем местоположении 3 Мая ?
+# intent: weather/find
+# slots: 10:13:condition_description, 17:38:location, 40:40:datetime, 42:44:datetime
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	снег	weather/find	B-condition_description
+4	в	weather/find	O
+5	текущем	weather/find	B-location
+6	местоположении	weather/find	I-location
+7	3	weather/find	B-datetime
+8	Мая	weather/find	B-datetime
+9	?	weather/find	O
+
+# id: valid_260_4
+# text EN: On June the thirteenth, 2037 what will it be like in the village of Belyashi, Altai Republico 
+# text RU: 13 Июня 2037 года каким будет день в селе Беляши, Республика Алтай
+# intent: weather/find
+# slots: 1:2:datetime, 4:17:datetime, 38:48:location, 51:66:location
+1	13	weather/find	B-datetime
+2	Июня	weather/find	B-datetime
+3	2037	weather/find	I-datetime
+4	года	weather/find	I-datetime
+5	каким	weather/find	O
+6	будет	weather/find	O
+7	день	weather/find	O
+8	в	weather/find	O
+9	селе	weather/find	B-location
+10	Беляши	weather/find	I-location
+11	,	weather/find	O
+12	Республика	weather/find	B-location
+13	Алтай	weather/find	I-location
+
+# id: valid_260_5
+# text EN: On July the thirteenth, 2037 what will it be like in the village of Belyashi, Altai Republico 
+# text RU: 13 Июля 2037 года каким будет день в селе Беляши, Республика Алтай
+# intent: weather/find
+# slots: 1:2:datetime, 4:17:datetime, 38:48:location, 51:66:location
+1	13	weather/find	B-datetime
+2	Июля	weather/find	B-datetime
+3	2037	weather/find	I-datetime
+4	года	weather/find	I-datetime
+5	каким	weather/find	O
+6	будет	weather/find	O
+7	день	weather/find	O
+8	в	weather/find	O
+9	селе	weather/find	B-location
+10	Беляши	weather/find	I-location
+11	,	weather/find	O
+12	Республика	weather/find	B-location
+13	Алтай	weather/find	I-location
+
+# id: valid_260_6
+# text EN: On August the thirteenth, 2037 what will it be like in the village of Belyashi, Altai Republico 
+# text RU: 13 Августа 2037 года каким будет день в селе Беляши, Республика Алтай
+# intent: weather/find
+# slots: 1:2:datetime, 4:20:datetime, 41:51:location, 54:69:location
+1	13	weather/find	B-datetime
+2	Августа	weather/find	B-datetime
+3	2037	weather/find	I-datetime
+4	года	weather/find	I-datetime
+5	каким	weather/find	O
+6	будет	weather/find	O
+7	день	weather/find	O
+8	в	weather/find	O
+9	селе	weather/find	B-location
+10	Беляши	weather/find	I-location
+11	,	weather/find	O
+12	Республика	weather/find	B-location
+13	Алтай	weather/find	I-location
+
+# id: valid_202_3
+# text EN: Will it be snowy at the current position by September 3 ? 
+# text RU: Будет ли снег в текущем местоположении 3 Сентября ?
+# intent: weather/find
+# slots: 10:13:condition_description, 17:38:location, 40:40:datetime, 42:49:datetime
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	снег	weather/find	B-condition_description
+4	в	weather/find	O
+5	текущем	weather/find	B-location
+6	местоположении	weather/find	I-location
+7	3	weather/find	B-datetime
+8	Сентября	weather/find	B-datetime
+9	?	weather/find	O
+
+# id: valid_265_2
+# text EN: Katya and Seryozha want to go to the best osteria steakhouse in the city center, Abaza, this afternoon 
+# text RU: Катя и Серёжа хотят отправиться в лучший стейкхаус в центре города, Абаза, сегодня днём
+# intent: BookRestaurant
+# slots: 1:13:party_size_description, 35:40:sort, 42:50:restaurant_type, 54:66:location, 69:74:location, 84:87:datetime
+1	Катя	BookRestaurant	B-party_size_description
+2	и	BookRestaurant	I-party_size_description
+3	Серёжа	BookRestaurant	I-party_size_description
+4	хотят	BookRestaurant	O
+5	отправиться	BookRestaurant	O
+6	в	BookRestaurant	O
+7	лучший	BookRestaurant	B-sort
+8	стейкхаус	BookRestaurant	B-restaurant_type
+9	в	BookRestaurant	O
+10	центре	BookRestaurant	B-location
+11	города	BookRestaurant	I-location
+12	,	BookRestaurant	O
+13	Абаза,	BookRestaurant	B-location
+14	,	BookRestaurant	O
+15	сегодня	BookRestaurant	O
+16	днём	BookRestaurant	B-datetime
+
+# id: valid_292_1
+# text EN: Find a restaurant in Abakan that servec okroshka 
+# text RU: Найди ресторан в Абакане , где подают окрошку
+# intent: BookRestaurant
+# slots: 7:14:restaurant_type, 18:24:location, 39:45:served_dish
+1	Найди	BookRestaurant	O
+2	ресторан	BookRestaurant	B-restaurant_type
+3	в	BookRestaurant	O
+4	Абакане	BookRestaurant	B-location
+5	,	BookRestaurant	O
+6	где	BookRestaurant	O
+7	подают	BookRestaurant	O
+8	окрошку	BookRestaurant	B-served_dish
+
+# id: valid_203_1
+# text EN: Find me a table for 8 somewhere in Abdulino in nine weeks 
+# text RU: Найди мне столик для 8, где-нибудь в Абдулине через девять недель
+# intent: BookRestaurant
+# slots: 22:22:party_size_number, 38:45:location, 47:65:datetime
+1	Найди	BookRestaurant	O
+2	мне	BookRestaurant	O
+3	столик	BookRestaurant	O
+4	для	BookRestaurant	O
+5	8	BookRestaurant	B-party_size_number
+6	,	BookRestaurant	O
+7	где-нибудь	BookRestaurant	O
+8	в	BookRestaurant	O
+9	Абдулине	BookRestaurant	B-location
+10	через	BookRestaurant	B-datetime
+11	девять	BookRestaurant	I-datetime
+12	недель	BookRestaurant	I-datetime
+
+# id: valid_203_2
+# text EN: Find me a table for 8 somewhere in Abinsk in nine weeks 
+# text RU: Найди мне столик для 8, где-нибудь в Абинске через девять недель
+# intent: BookRestaurant
+# slots: 22:22:party_size_number, 38:44:location, 46:64:datetime
+1	Найди	BookRestaurant	O
+2	мне	BookRestaurant	O
+3	столик	BookRestaurant	O
+4	для	BookRestaurant	O
+5	8	BookRestaurant	B-party_size_number
+6	,	BookRestaurant	O
+7	где-нибудь	BookRestaurant	O
+8	в	BookRestaurant	O
+9	Абинске	BookRestaurant	B-location
+10	через	BookRestaurant	B-datetime
+11	девять	BookRestaurant	I-datetime
+12	недель	BookRestaurant	I-datetime
+
+# id: valid_203_3
+# text EN: Find me a table for 8 somewhere in Agidel in nine weeks 
+# text RU: Найди мне столик для 8, где-нибудь в Агидели через девять недель
+# intent: BookRestaurant
+# slots: 22:22:party_size_number, 38:44:location, 46:64:datetime
+1	Найди	BookRestaurant	O
+2	мне	BookRestaurant	O
+3	столик	BookRestaurant	O
+4	для	BookRestaurant	O
+5	8	BookRestaurant	B-party_size_number
+6	,	BookRestaurant	O
+7	где-нибудь	BookRestaurant	O
+8	в	BookRestaurant	O
+9	Агидели	BookRestaurant	B-location
+10	через	BookRestaurant	B-datetime
+11	девять	BookRestaurant	I-datetime
+12	недель	BookRestaurant	I-datetime
+
+# id: valid_292_2
+# text EN: Find a restaurant in Agryz that servec okroshka 
+# text RU: Найди ресторан в Агрызе , где подают окрошку
+# intent: BookRestaurant
+# slots: 7:14:restaurant_type, 18:23:location, 38:44:served_dish
+1	Найди	BookRestaurant	O
+2	ресторан	BookRestaurant	B-restaurant_type
+3	в	BookRestaurant	O
+4	Агрызе	BookRestaurant	B-location
+5	,	BookRestaurant	O
+6	где	BookRestaurant	O
+7	подают	BookRestaurant	O
+8	окрошку	BookRestaurant	B-served_dish
+
+# id: valid_213_1
+# text EN: Show me the forecast for Adygeysk 
+# text RU: Покажи мне прогноз для Адыгейска
+# intent: weather/find
+# slots: 24:32:location
+1	Покажи	weather/find	O
+2	мне	weather/find	O
+3	прогноз	weather/find	O
+4	для	weather/find	O
+5	Адыгейска	weather/find	B-location
+
+# id: valid_216_1
+# text EN: Please tell me the forecast for Aznakaevo 
+# text RU: Пожалуйста, скажи мне прогноз для Азнакаева
+# intent: weather/find
+# slots: 35:43:location
+1	Пожалуйста	weather/find	O
+2	,	weather/find	O
+3	скажи	weather/find	O
+4	мне	weather/find	O
+5	прогноз	weather/find	O
+6	для	weather/find	O
+7	Азнакаева	weather/find	B-location
+
+# id: valid_203_4
+# text EN: Find me a table for 8 somewhere in Azov in nine weeks 
+# text RU: Найди мне столик для 8, где-нибудь в Азове через девять недель
+# intent: BookRestaurant
+# slots: 22:22:party_size_number, 38:42:location, 44:62:datetime
+1	Найди	BookRestaurant	O
+2	мне	BookRestaurant	O
+3	столик	BookRestaurant	O
+4	для	BookRestaurant	O
+5	8	BookRestaurant	B-party_size_number
+6	,	BookRestaurant	O
+7	где-нибудь	BookRestaurant	O
+8	в	BookRestaurant	O
+9	Азове	BookRestaurant	B-location
+10	через	BookRestaurant	B-datetime
+11	девять	BookRestaurant	I-datetime
+12	недель	BookRestaurant	I-datetime
+
+# id: valid_266_1
+# text EN: is it going to be chilly in Ak-Dovurak in 13 hours 
+# text RU:  будет ли прохладно в Ак-довураке через 13 часов
+# intent: weather/find
+# slots: 10:18:condition_temperature, 22:32:location, 40:47:datetime
+1	будет	weather/find	O
+2	ли	weather/find	O
+3	прохладно	weather/find	B-condition_temperature
+4	в	weather/find	O
+5	Ак-довураке	weather/find	B-location
+6	через	weather/find	O
+7	13	weather/find	B-datetime
+8	часов	weather/find	I-datetime
+
+# id: valid_203_5
+# text EN: Find me a table for 8 somewhere in Aksay in nine weeks 
+# text RU: Найди мне столик для 8, где-нибудь в Аксае через девять недель
+# intent: BookRestaurant
+# slots: 22:22:party_size_number, 38:42:location, 44:62:datetime
+1	Найди	BookRestaurant	O
+2	мне	BookRestaurant	O
+3	столик	BookRestaurant	O
+4	для	BookRestaurant	O
+5	8	BookRestaurant	B-party_size_number
+6	,	BookRestaurant	O
+7	где-нибудь	BookRestaurant	O
+8	в	BookRestaurant	O
+9	Аксае	BookRestaurant	B-location
+10	через	BookRestaurant	B-datetime
+11	девять	BookRestaurant	I-datetime
+12	недель	BookRestaurant	I-datetime
+
+# id: valid_233_1
+# text EN: Will it be windy at 4 PM in Alagir ? 
+# text RU: Будет ли ветрено в 4 часа дня в Алагире ?
+# intent: weather/find
+# slots: 10:16:condition_description, 20:29:datetime, 33:39:location
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	ветрено	weather/find	B-condition_description
+4	в	weather/find	O
+5	4	weather/find	B-datetime
+6	часа	weather/find	I-datetime
+7	дня	weather/find	I-datetime
+8	в	weather/find	O
+9	Алагире	weather/find	B-location
+10	?	weather/find	O
+
+# id: valid_275_1
+# text EN: Will it be chillier in Alapaevsk ? 
+# text RU: Будет ли прохладнее в Алапаевске ?
+# intent: weather/find
+# slots: 10:19:condition_temperature, 23:32:location
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	прохладнее	weather/find	B-condition_temperature
+4	в	weather/find	O
+5	Алапаевске	weather/find	B-location
+6	?	weather/find	O
+
+# id: valid_266_2
+# text EN: is it going to be chilly in Alatyr in 13 hours 
+# text RU:  будет ли прохладно в Алатыре через 13 часов
+# intent: weather/find
+# slots: 10:18:condition_temperature, 22:28:location, 36:43:datetime
+1	будет	weather/find	O
+2	ли	weather/find	O
+3	прохладно	weather/find	B-condition_temperature
+4	в	weather/find	O
+5	Алатыре	weather/find	B-location
+6	через	weather/find	O
+7	13	weather/find	B-datetime
+8	часов	weather/find	I-datetime
+
+# id: valid_233_2
+# text EN: Will it be windy at 4 PM in Aldan ? 
+# text RU: Будет ли ветрено в 4 часа дня в Алдане ?
+# intent: weather/find
+# slots: 10:16:condition_description, 20:29:datetime, 33:38:location
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	ветрено	weather/find	B-condition_description
+4	в	weather/find	O
+5	4	weather/find	B-datetime
+6	часа	weather/find	I-datetime
+7	дня	weather/find	I-datetime
+8	в	weather/find	O
+9	Алдане	weather/find	B-location
+10	?	weather/find	O
+
+# id: valid_265_3
+# text EN: Katya and Seryozha want to go to the best osteria steakhouse in the city center, Aleysk, this afternoon 
+# text RU: Катя и Серёжа хотят отправиться в лучший стейкхаус в центре города, Алейск, сегодня днём
+# intent: BookRestaurant
+# slots: 1:13:party_size_description, 35:40:sort, 42:50:restaurant_type, 54:66:location, 69:75:location, 85:88:datetime
+1	Катя	BookRestaurant	B-party_size_description
+2	и	BookRestaurant	I-party_size_description
+3	Серёжа	BookRestaurant	I-party_size_description
+4	хотят	BookRestaurant	O
+5	отправиться	BookRestaurant	O
+6	в	BookRestaurant	O
+7	лучший	BookRestaurant	B-sort
+8	стейкхаус	BookRestaurant	B-restaurant_type
+9	в	BookRestaurant	O
+10	центре	BookRestaurant	B-location
+11	города	BookRestaurant	I-location
+12	,	BookRestaurant	O
+13	Алейск,	BookRestaurant	B-location
+14	,	BookRestaurant	O
+15	сегодня	BookRestaurant	O
+16	днём	BookRestaurant	B-datetime
+
+# id: valid_265_4
+# text EN: Katya and Seryozha want to go to the best osteria steakhouse in the city center, Aleksandrov, this afternoon 
+# text RU: Катя и Серёжа хотят отправиться в лучший стейкхаус в центре города, Александров, сегодня днём
+# intent: BookRestaurant
+# slots: 1:13:party_size_description, 35:40:sort, 42:50:restaurant_type, 54:66:location, 69:80:location, 90:93:datetime
+1	Катя	BookRestaurant	B-party_size_description
+2	и	BookRestaurant	I-party_size_description
+3	Серёжа	BookRestaurant	I-party_size_description
+4	хотят	BookRestaurant	O
+5	отправиться	BookRestaurant	O
+6	в	BookRestaurant	O
+7	лучший	BookRestaurant	B-sort
+8	стейкхаус	BookRestaurant	B-restaurant_type
+9	в	BookRestaurant	O
+10	центре	BookRestaurant	B-location
+11	города	BookRestaurant	I-location
+12	,	BookRestaurant	O
+13	Александров,	BookRestaurant	B-location
+14	,	BookRestaurant	O
+15	сегодня	BookRestaurant	O
+16	днём	BookRestaurant	B-datetime
+
+# id: valid_213_2
+# text EN: Show me the forecast for Aleksandrovsk 
+# text RU: Покажи мне прогноз для Александровска
+# intent: weather/find
+# slots: 24:37:location
+1	Покажи	weather/find	O
+2	мне	weather/find	O
+3	прогноз	weather/find	O
+4	для	weather/find	O
+5	Александровска	weather/find	B-location
+
+# id: valid_203_6
+# text EN: Find me a table for 8 somewhere in Aleksandrovsk-Sakhalinskiy in nine weeks 
+# text RU: Найди мне столик для 8, где-нибудь в Александровск-сахалинском через девять недель
+# intent: BookRestaurant
+# slots: 22:22:party_size_number, 38:62:location, 64:82:datetime
+1	Найди	BookRestaurant	O
+2	мне	BookRestaurant	O
+3	столик	BookRestaurant	O
+4	для	BookRestaurant	O
+5	8	BookRestaurant	B-party_size_number
+6	,	BookRestaurant	O
+7	где-нибудь	BookRestaurant	O
+8	в	BookRestaurant	O
+9	Александровск-сахалинском	BookRestaurant	B-location
+10	через	BookRestaurant	B-datetime
+11	девять	BookRestaurant	I-datetime
+12	недель	BookRestaurant	I-datetime
+
+# id: valid_218_1
+# text EN: weather in Russia, Alekseevka 
+# text RU: погода в России, Алексеевка
+# intent: weather/find
+# slots: 10:16:location, 18:27:location
+1	погода	weather/find	O
+2	в	weather/find	O
+3	России,	weather/find	B-location
+4	Алексеевка	weather/find	B-location
+
+# id: valid_266_3
+# text EN: is it going to be chilly in Aleksin in 13 hours 
+# text RU:  будет ли прохладно в Алексине через 13 часов
+# intent: weather/find
+# slots: 10:18:condition_temperature, 22:29:location, 37:44:datetime
+1	будет	weather/find	O
+2	ли	weather/find	O
+3	прохладно	weather/find	B-condition_temperature
+4	в	weather/find	O
+5	Алексине	weather/find	B-location
+6	через	weather/find	O
+7	13	weather/find	B-datetime
+8	часов	weather/find	I-datetime
+
+# id: valid_49_1
+# text EN: What is the temperature like in Alzamay right now? 
+# text RU: Какая температура в Алзамае прямо сейчас?
+# intent: weather/find
+# slots: 7:17:weather/attribute, 21:27:location, 35:40:datetime
+1	Какая	weather/find	O
+2	температура	weather/find	B-weather/attribute
+3	в	weather/find	O
+4	Алзамае	weather/find	B-location
+5	прямо	weather/find	O
+6	сейчас	weather/find	B-datetime
+7	?	weather/find	O
+
+# id: valid_49_2
+# text EN: What is the temperature like in Alupka right now? 
+# text RU: Какая температура в Алупке прямо сейчас?
+# intent: weather/find
+# slots: 7:17:weather/attribute, 21:26:location, 34:39:datetime
+1	Какая	weather/find	O
+2	температура	weather/find	B-weather/attribute
+3	в	weather/find	O
+4	Алупке	weather/find	B-location
+5	прямо	weather/find	O
+6	сейчас	weather/find	B-datetime
+7	?	weather/find	O
+
+# id: valid_292_3
+# text EN: Find a restaurant in Alushta that servec okroshka 
+# text RU: Найди ресторан в Алуште , где подают окрошку
+# intent: BookRestaurant
+# slots: 7:14:restaurant_type, 18:23:location, 38:44:served_dish
+1	Найди	BookRestaurant	O
+2	ресторан	BookRestaurant	B-restaurant_type
+3	в	BookRestaurant	O
+4	Алуште	BookRestaurant	B-location
+5	,	BookRestaurant	O
+6	где	BookRestaurant	O
+7	подают	BookRestaurant	O
+8	окрошку	BookRestaurant	B-served_dish
+
+# id: valid_292_4
+# text EN: Find a restaurant in Almetevsk that servec okroshka 
+# text RU: Найди ресторан в Альметьевске , где подают окрошку
+# intent: BookRestaurant
+# slots: 7:14:restaurant_type, 18:29:location, 44:50:served_dish
+1	Найди	BookRestaurant	O
+2	ресторан	BookRestaurant	B-restaurant_type
+3	в	BookRestaurant	O
+4	Альметьевске	BookRestaurant	B-location
+5	,	BookRestaurant	O
+6	где	BookRestaurant	O
+7	подают	BookRestaurant	O
+8	окрошку	BookRestaurant	B-served_dish
+
+# id: valid_233_3
+# text EN: Will it be windy at 4 PM in Amursk ? 
+# text RU: Будет ли ветрено в 4 часа дня в Амурске ?
+# intent: weather/find
+# slots: 10:16:condition_description, 20:29:datetime, 33:39:location
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	ветрено	weather/find	B-condition_description
+4	в	weather/find	O
+5	4	weather/find	B-datetime
+6	часа	weather/find	I-datetime
+7	дня	weather/find	I-datetime
+8	в	weather/find	O
+9	Амурске	weather/find	B-location
+10	?	weather/find	O
+
+# id: valid_233_4
+# text EN: Will it be windy at 4 PM in Anadyr ? 
+# text RU: Будет ли ветрено в 4 часа дня в Анадыре ?
+# intent: weather/find
+# slots: 10:16:condition_description, 20:29:datetime, 33:39:location
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	ветрено	weather/find	B-condition_description
+4	в	weather/find	O
+5	4	weather/find	B-datetime
+6	часа	weather/find	I-datetime
+7	дня	weather/find	I-datetime
+8	в	weather/find	O
+9	Анадыре	weather/find	B-location
+10	?	weather/find	O
+
+# id: valid_49_3
+# text EN: What is the temperature like in Anapa right now? 
+# text RU: Какая температура в Анапе прямо сейчас?
+# intent: weather/find
+# slots: 7:17:weather/attribute, 21:25:location, 33:38:datetime
+1	Какая	weather/find	O
+2	температура	weather/find	B-weather/attribute
+3	в	weather/find	O
+4	Анапе	weather/find	B-location
+5	прямо	weather/find	O
+6	сейчас	weather/find	B-datetime
+7	?	weather/find	O
+
+# id: valid_216_2
+# text EN: Please tell me the forecast for Angarsk 
+# text RU: Пожалуйста, скажи мне прогноз для Ангарска
+# intent: weather/find
+# slots: 35:42:location
+1	Пожалуйста	weather/find	O
+2	,	weather/find	O
+3	скажи	weather/find	O
+4	мне	weather/find	O
+5	прогноз	weather/find	O
+6	для	weather/find	O
+7	Ангарска	weather/find	B-location
+
+# id: valid_216_3
+# text EN: Please tell me the forecast for Andreapol 
+# text RU: Пожалуйста, скажи мне прогноз для Андреаполя
+# intent: weather/find
+# slots: 35:44:location
+1	Пожалуйста	weather/find	O
+2	,	weather/find	O
+3	скажи	weather/find	O
+4	мне	weather/find	O
+5	прогноз	weather/find	O
+6	для	weather/find	O
+7	Андреаполя	weather/find	B-location
+
+# id: valid_275_2
+# text EN: Will it be chillier in Anzhero-Sudzhensk ? 
+# text RU: Будет ли прохладнее в Анжеро-судженске ?
+# intent: weather/find
+# slots: 10:19:condition_temperature, 23:38:location
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	прохладнее	weather/find	B-condition_temperature
+4	в	weather/find	O
+5	Анжеро-судженске	weather/find	B-location
+6	?	weather/find	O
+
+# id: valid_213_3
+# text EN: Show me the forecast for Aniva 
+# text RU: Покажи мне прогноз для Анивы
+# intent: weather/find
+# slots: 24:28:location
+1	Покажи	weather/find	O
+2	мне	weather/find	O
+3	прогноз	weather/find	O
+4	для	weather/find	O
+5	Анивы	weather/find	B-location
+
+# id: valid_265_5
+# text EN: Katya and Seryozha want to go to the best osteria steakhouse in the city center, Apatity, this afternoon 
+# text RU: Катя и Серёжа хотят отправиться в лучший стейкхаус в центре города, Апатиты, сегодня днём
+# intent: BookRestaurant
+# slots: 1:13:party_size_description, 35:40:sort, 42:50:restaurant_type, 54:66:location, 69:76:location, 86:89:datetime
+1	Катя	BookRestaurant	B-party_size_description
+2	и	BookRestaurant	I-party_size_description
+3	Серёжа	BookRestaurant	I-party_size_description
+4	хотят	BookRestaurant	O
+5	отправиться	BookRestaurant	O
+6	в	BookRestaurant	O
+7	лучший	BookRestaurant	B-sort
+8	стейкхаус	BookRestaurant	B-restaurant_type
+9	в	BookRestaurant	O
+10	центре	BookRestaurant	B-location
+11	города	BookRestaurant	I-location
+12	,	BookRestaurant	O
+13	Апатиты,	BookRestaurant	B-location
+14	,	BookRestaurant	O
+15	сегодня	BookRestaurant	O
+16	днём	BookRestaurant	B-datetime
+
+# id: valid_266_4
+# text EN: is it going to be chilly in Aprelevka in 13 hours 
+# text RU:  будет ли прохладно в Апрелевке через 13 часов
+# intent: weather/find
+# slots: 10:18:condition_temperature, 22:30:location, 38:45:datetime
+1	будет	weather/find	O
+2	ли	weather/find	O
+3	прохладно	weather/find	B-condition_temperature
+4	в	weather/find	O
+5	Апрелевке	weather/find	B-location
+6	через	weather/find	O
+7	13	weather/find	B-datetime
+8	часов	weather/find	I-datetime
+
+# id: valid_292_5
+# text EN: Find a restaurant in Apsheronsk that servec okroshka 
+# text RU: Найди ресторан в Апшеронске , где подают окрошку
+# intent: BookRestaurant
+# slots: 7:14:restaurant_type, 18:27:location, 42:48:served_dish
+1	Найди	BookRestaurant	O
+2	ресторан	BookRestaurant	B-restaurant_type
+3	в	BookRestaurant	O
+4	Апшеронске	BookRestaurant	B-location
+5	,	BookRestaurant	O
+6	где	BookRestaurant	O
+7	подают	BookRestaurant	O
+8	окрошку	BookRestaurant	B-served_dish
+
+# id: valid_266_5
+# text EN: is it going to be chilly in Aramil in 13 hours 
+# text RU:  будет ли прохладно в Арамиле через 13 часов
+# intent: weather/find
+# slots: 10:18:condition_temperature, 22:28:location, 36:43:datetime
+1	будет	weather/find	O
+2	ли	weather/find	O
+3	прохладно	weather/find	B-condition_temperature
+4	в	weather/find	O
+5	Арамиле	weather/find	B-location
+6	через	weather/find	O
+7	13	weather/find	B-datetime
+8	часов	weather/find	I-datetime
+
+# id: valid_49_4
+# text EN: What is the temperature like in Argun right now? 
+# text RU: Какая температура в Аргуне прямо сейчас?
+# intent: weather/find
+# slots: 7:17:weather/attribute, 21:26:location, 34:39:datetime
+1	Какая	weather/find	O
+2	температура	weather/find	B-weather/attribute
+3	в	weather/find	O
+4	Аргуне	weather/find	B-location
+5	прямо	weather/find	O
+6	сейчас	weather/find	B-datetime
+7	?	weather/find	O
+
+# id: valid_213_4
+# text EN: Show me the forecast for Ardatov 
+# text RU: Покажи мне прогноз для Ардатова
+# intent: weather/find
+# slots: 24:31:location
+1	Покажи	weather/find	O
+2	мне	weather/find	O
+3	прогноз	weather/find	O
+4	для	weather/find	O
+5	Ардатова	weather/find	B-location
+
+# id: valid_218_2
+# text EN: weather in Russia, Ardon 
+# text RU: погода в России, Ардон
+# intent: weather/find
+# slots: 10:16:location, 18:22:location
+1	погода	weather/find	O
+2	в	weather/find	O
+3	России,	weather/find	B-location
+4	Ардон	weather/find	B-location
+
+# id: valid_49_5
+# text EN: What is the temperature like in Arzamas right now? 
+# text RU: Какая температура в Арзамасе прямо сейчас?
+# intent: weather/find
+# slots: 7:17:weather/attribute, 21:28:location, 36:41:datetime
+1	Какая	weather/find	O
+2	температура	weather/find	B-weather/attribute
+3	в	weather/find	O
+4	Арзамасе	weather/find	B-location
+5	прямо	weather/find	O
+6	сейчас	weather/find	B-datetime
+7	?	weather/find	O
+
+# id: valid_292_6
+# text EN: Find a restaurant in Arkadak that servec okroshka 
+# text RU: Найди ресторан в Аркадаке , где подают окрошку
+# intent: BookRestaurant
+# slots: 7:14:restaurant_type, 18:25:location, 40:46:served_dish
+1	Найди	BookRestaurant	O
+2	ресторан	BookRestaurant	B-restaurant_type
+3	в	BookRestaurant	O
+4	Аркадаке	BookRestaurant	B-location
+5	,	BookRestaurant	O
+6	где	BookRestaurant	O
+7	подают	BookRestaurant	O
+8	окрошку	BookRestaurant	B-served_dish
+
+# id: valid_233_5
+# text EN: Will it be windy at 4 PM in Armavir ? 
+# text RU: Будет ли ветрено в 4 часа дня в Армавире ?
+# intent: weather/find
+# slots: 10:16:condition_description, 20:29:datetime, 33:40:location
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	ветрено	weather/find	B-condition_description
+4	в	weather/find	O
+5	4	weather/find	B-datetime
+6	часа	weather/find	I-datetime
+7	дня	weather/find	I-datetime
+8	в	weather/find	O
+9	Армавире	weather/find	B-location
+10	?	weather/find	O
+
+# id: valid_203_7
+# text EN: Find me a table for 8 somewhere in Armyansk in nine weeks 
+# text RU: Найди мне столик для 8, где-нибудь в Армянске через девять недель
+# intent: BookRestaurant
+# slots: 22:22:party_size_number, 38:45:location, 47:65:datetime
+1	Найди	BookRestaurant	O
+2	мне	BookRestaurant	O
+3	столик	BookRestaurant	O
+4	для	BookRestaurant	O
+5	8	BookRestaurant	B-party_size_number
+6	,	BookRestaurant	O
+7	где-нибудь	BookRestaurant	O
+8	в	BookRestaurant	O
+9	Армянске	BookRestaurant	B-location
+10	через	BookRestaurant	B-datetime
+11	девять	BookRestaurant	I-datetime
+12	недель	BookRestaurant	I-datetime
+
+# id: valid_275_3
+# text EN: Will it be chillier in Arsenev ? 
+# text RU: Будет ли прохладнее в Арсеньеве ?
+# intent: weather/find
+# slots: 10:19:condition_temperature, 23:31:location
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	прохладнее	weather/find	B-condition_temperature
+4	в	weather/find	O
+5	Арсеньеве	weather/find	B-location
+6	?	weather/find	O
+
+# id: valid_292_7
+# text EN: Find a restaurant in Arsk that servec okroshka 
+# text RU: Найди ресторан в Арске , где подают окрошку
+# intent: BookRestaurant
+# slots: 7:14:restaurant_type, 18:22:location, 37:43:served_dish
+1	Найди	BookRestaurant	O
+2	ресторан	BookRestaurant	B-restaurant_type
+3	в	BookRestaurant	O
+4	Арске	BookRestaurant	B-location
+5	,	BookRestaurant	O
+6	где	BookRestaurant	O
+7	подают	BookRestaurant	O
+8	окрошку	BookRestaurant	B-served_dish
+
+# id: valid_203_8
+# text EN: Find me a table for 8 somewhere in Artyom in nine weeks 
+# text RU: Найди мне столик для 8, где-нибудь в Артёме через девять недель
+# intent: BookRestaurant
+# slots: 22:22:party_size_number, 38:43:location, 45:63:datetime
+1	Найди	BookRestaurant	O
+2	мне	BookRestaurant	O
+3	столик	BookRestaurant	O
+4	для	BookRestaurant	O
+5	8	BookRestaurant	B-party_size_number
+6	,	BookRestaurant	O
+7	где-нибудь	BookRestaurant	O
+8	в	BookRestaurant	O
+9	Артёме	BookRestaurant	B-location
+10	через	BookRestaurant	B-datetime
+11	девять	BookRestaurant	I-datetime
+12	недель	BookRestaurant	I-datetime
+
+# id: valid_218_3
+# text EN: weather in Russia, Artyomovsk 
+# text RU: погода в России, Артёмовск
+# intent: weather/find
+# slots: 10:16:location, 18:26:location
+1	погода	weather/find	O
+2	в	weather/find	O
+3	России,	weather/find	B-location
+4	Артёмовск	weather/find	B-location
+
+# id: valid_292_8
+# text EN: Find a restaurant in Artyomovskiy that servec okroshka 
+# text RU: Найди ресторан в Артёмовском , где подают окрошку
+# intent: BookRestaurant
+# slots: 7:14:restaurant_type, 18:28:location, 43:49:served_dish
+1	Найди	BookRestaurant	O
+2	ресторан	BookRestaurant	B-restaurant_type
+3	в	BookRestaurant	O
+4	Артёмовском	BookRestaurant	B-location
+5	,	BookRestaurant	O
+6	где	BookRestaurant	O
+7	подают	BookRestaurant	O
+8	окрошку	BookRestaurant	B-served_dish
+
+# id: valid_275_4
+# text EN: Will it be chillier in Arkhangelsk ? 
+# text RU: Будет ли прохладнее в Архангельске ?
+# intent: weather/find
+# slots: 10:19:condition_temperature, 23:34:location
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	прохладнее	weather/find	B-condition_temperature
+4	в	weather/find	O
+5	Архангельске	weather/find	B-location
+6	?	weather/find	O
+
+# id: valid_213_5
+# text EN: Show me the forecast for Asbest 
+# text RU: Покажи мне прогноз для Асбеста
+# intent: weather/find
+# slots: 24:30:location
+1	Покажи	weather/find	O
+2	мне	weather/find	O
+3	прогноз	weather/find	O
+4	для	weather/find	O
+5	Асбеста	weather/find	B-location
+
+# id: valid_218_4
+# text EN: weather in Russia, Asino 
+# text RU: погода в России, Асино
+# intent: weather/find
+# slots: 10:16:location, 18:22:location
+1	погода	weather/find	O
+2	в	weather/find	O
+3	России,	weather/find	B-location
+4	Асино	weather/find	B-location
+
+# id: valid_265_6
+# text EN: Katya and Seryozha want to go to the best osteria steakhouse in the city center, Astrakhan, this afternoon 
+# text RU: Катя и Серёжа хотят отправиться в лучший стейкхаус в центре города, Астрахань, сегодня днём
+# intent: BookRestaurant
+# slots: 1:13:party_size_description, 35:40:sort, 42:50:restaurant_type, 54:66:location, 69:78:location, 88:91:datetime
+1	Катя	BookRestaurant	B-party_size_description
+2	и	BookRestaurant	I-party_size_description
+3	Серёжа	BookRestaurant	I-party_size_description
+4	хотят	BookRestaurant	O
+5	отправиться	BookRestaurant	O
+6	в	BookRestaurant	O
+7	лучший	BookRestaurant	B-sort
+8	стейкхаус	BookRestaurant	B-restaurant_type
+9	в	BookRestaurant	O
+10	центре	BookRestaurant	B-location
+11	города	BookRestaurant	I-location
+12	,	BookRestaurant	O
+13	Астрахань,	BookRestaurant	B-location
+14	,	BookRestaurant	O
+15	сегодня	BookRestaurant	O
+16	днём	BookRestaurant	B-datetime
+
+# id: valid_266_6
+# text EN: is it going to be chilly in Atkarsk in 13 hours 
+# text RU:  будет ли прохладно в Аткарске через 13 часов
+# intent: weather/find
+# slots: 10:18:condition_temperature, 22:29:location, 37:44:datetime
+1	будет	weather/find	O
+2	ли	weather/find	O
+3	прохладно	weather/find	B-condition_temperature
+4	в	weather/find	O
+5	Аткарске	weather/find	B-location
+6	через	weather/find	O
+7	13	weather/find	B-datetime
+8	часов	weather/find	I-datetime
+
+# id: valid_218_5
+# text EN: weather in Russia, Akhtubinsk 
+# text RU: погода в России, Ахтубинск
+# intent: weather/find
+# slots: 10:16:location, 18:26:location
+1	погода	weather/find	O
+2	в	weather/find	O
+3	России,	weather/find	B-location
+4	Ахтубинск	weather/find	B-location
+
+# id: valid_233_6
+# text EN: Will it be windy at 4 PM in Achinsk ? 
+# text RU: Будет ли ветрено в 4 часа дня в Ачинске ?
+# intent: weather/find
+# slots: 10:16:condition_description, 20:29:datetime, 33:39:location
+1	Будет	weather/find	O
+2	ли	weather/find	O
+3	ветрено	weather/find	B-condition_description
+4	в	weather/find	O
+5	4	weather/find	B-datetime
+6	часа	weather/find	I-datetime
+7	дня	weather/find	I-datetime
+8	в	weather/find	O
+9	Ачинске	weather/find	B-location
+10	?	weather/find	O
+
+# id: valid_218_6
+# text EN: weather in Russia, Achkhoy-Martan 
+# text RU: погода в России, Ачхой-мартан
+# intent: weather/find
+# slots: 10:16:location, 18:29:location
+1	погода	weather/find	O
+2	в	weather/find	O
+3	России,	weather/find	B-location
+4	Ачхой-мартан	weather/find	B-location
+
+# id: valid_49_6
+# text EN: What is the temperature like in Asha right now? 
+# text RU: Какая температура в Аше прямо сейчас?
+# intent: weather/find
+# slots: 7:17:weather/attribute, 21:23:location, 31:36:datetime
+1	Какая	weather/find	O
+2	температура	weather/find	B-weather/attribute
+3	в	weather/find	O
+4	Аше	weather/find	B-location
+5	прямо	weather/find	O
+6	сейчас	weather/find	B-datetime
+7	?	weather/find	O
+
+# id: valid_243_1
+# text EN: I need a reservation for 6 PM. with a party of 10 at Ayna 
+# text RU: Мне нужно бронирование на 6 вечера, на 10 персон, в Айне
+# intent: BookRestaurant
+# slots: 27:35:datetime, 40:41:party_size_number, 53:56:restaurant_name
+1	Мне	BookRestaurant	O
+2	нужно	BookRestaurant	O
+3	бронирование	BookRestaurant	O
+4	на	BookRestaurant	O
+5	6	BookRestaurant	B-datetime
+6	вечера,	BookRestaurant	I-datetime
+7	на	BookRestaurant	O
+8	10	BookRestaurant	B-party_size_number
+8	персон,	BookRestaurant	O
+10	в	BookRestaurant	O
+11	Айне	BookRestaurant	B-restaurant_name
+
+# id: valid_243_2
+# text EN: I need a reservation for 6 PM. with a party of 10 at Russkoe podvore 
+# text RU: Мне нужно бронирование на 6 вечера, на 10 персон, в Русском Подворье
+# intent: BookRestaurant
+# slots: 27:35:datetime, 40:41:party_size_number, 53:68:restaurant_name
+1	Мне	BookRestaurant	O
+2	нужно	BookRestaurant	O
+3	бронирование	BookRestaurant	O
+4	на	BookRestaurant	O
+5	6	BookRestaurant	B-datetime
+6	вечера,	BookRestaurant	I-datetime
+7	на	BookRestaurant	O
+8	10	BookRestaurant	B-party_size_number
+8	персон,	BookRestaurant	O
+10	в	BookRestaurant	O
+11	Русском	BookRestaurant	B-restaurant_name
+12	Подворье	BookRestaurant	I-restaurant_name
+
+# id: valid_252_11
+# text EN: I want to find the show Odnazhdy v Rossii . 
+# text RU: Я хочу найти шоу Однажды в России .
+# intent: SearchCreativeWork
+# slots: 14:16:object_type, 18:33:object_name
+1	Я	SearchCreativeWork	O
+2	хочу	SearchCreativeWork	O
+3	найти	SearchCreativeWork	O
+4	шоу	SearchCreativeWork	B-object_type
+5	Однажды	SearchCreativeWork	B-object_name
+6	в	SearchCreativeWork	I-object_name
+7	России	SearchCreativeWork	I-object_name
+8	.	SearchCreativeWork	O
+
+# id: valid_262_7
+# text EN: Find a TV series called Stand Up . 
+# text RU: Найди ТВ шоу под названием Stand Up .
+# intent: SearchCreativeWork
+# slots: 7:12:object_type, 28:35:object_name
+1	Найди	SearchCreativeWork	O
+2	ТВ	SearchCreativeWork	B-object_type
+3	шоу	SearchCreativeWork	I-object_type
+4	под	SearchCreativeWork	O
+5	названием	SearchCreativeWork	O
+6	Stand	SearchCreativeWork	B-object_name
+7	Up	SearchCreativeWork	I-object_name
+8	.	SearchCreativeWork	O
+
+# id: valid_252_12
+# text EN: I want to find the show Prozhektorperiskhilton . 
+# text RU: Я хочу найти шоу Прожекторперисхилтон .
+# intent: SearchCreativeWork
+# slots: 14:16:object_type, 18:37:object_name
+1	Я	SearchCreativeWork	O
+2	хочу	SearchCreativeWork	O
+3	найти	SearchCreativeWork	O
+4	шоу	SearchCreativeWork	B-object_type
+5	Прожекторперисхилтон	SearchCreativeWork	B-object_name
+6	.	SearchCreativeWork	O
+
+# id: valid_262_8
+# text EN: Find a TV series called V mire zhivotnykh . 
+# text RU: Найди ТВ шоу под названием В мире животных .
+# intent: SearchCreativeWork
+# slots: 7:12:object_type, 8:42:object_name
+1	Найди	SearchCreativeWork	O
+2	ТВ	SearchCreativeWork	B-object_type
+3	шоу	SearchCreativeWork	I-object_type
+4	под	SearchCreativeWork	O
+5	названием	SearchCreativeWork	O
+6	В	SearchCreativeWork	B-object_name
+7	мире	SearchCreativeWork	I-object_name
+8	животных	SearchCreativeWork	I-object_name
+9	.	SearchCreativeWork	O
+
+# id: valid_206_7
+# text EN: Show me the TV show Comedy Club 
+# text RU: Покажи мне телешоу Comedy Club
+# intent: SearchCreativeWork
+# slots: 12:18:object_type, 20:30:object_name
+1	Покажи	SearchCreativeWork	O
+2	мне	SearchCreativeWork	O
+3	телешоу	SearchCreativeWork	B-object_type
+4	Comedy	SearchCreativeWork	B-object_name
+5	Club	SearchCreativeWork	I-object_name
+
+# id: valid_206_8
+# text EN: Show me the TV show KVN. Vysshaya liga 
+# text RU: Покажи мне телешоу КВН. Высочайшая Лига
+# intent: SearchCreativeWork
+# slots: 12:18:object_type, 20:39:object_name
+1	Покажи	SearchCreativeWork	O
+2	мне	SearchCreativeWork	O
+3	телешоу	SearchCreativeWork	B-object_type
+4	КВН.	SearchCreativeWork	B-object_name
+5	Высочайшая	SearchCreativeWork	I-object_name
+6	Лига	SearchCreativeWork	I-object_name
+
+# id: valid_206_9
+# text EN: Show me the TV show Na nozhakh 
+# text RU: Покажи мне телешоу На ножах
+# intent: SearchCreativeWork
+# slots: 12:18:object_type, 20:27:object_name
+1	Покажи	SearchCreativeWork	O
+2	мне	SearchCreativeWork	O
+3	телешоу	SearchCreativeWork	B-object_type
+4	На	SearchCreativeWork	B-object_name
+5	ножах	SearchCreativeWork	I-object_name
+
+# id: valid_262_9
+# text EN: Find a TV series called Maska . 
+# text RU: Найди ТВ шоу под названием Маска .
+# intent: SearchCreativeWork
+# slots: 7:12:object_type, 28:32:object_name
+1	Найди	SearchCreativeWork	O
+2	ТВ	SearchCreativeWork	B-object_type
+3	шоу	SearchCreativeWork	I-object_type
+4	под	SearchCreativeWork	O
+5	названием	SearchCreativeWork	O
+6	Маска	SearchCreativeWork	B-object_name
+7	.	SearchCreativeWork	O
+
+# id: valid_252_13
+# text EN: I want to find the show Vecher s Vladimirom Solovevym . 
+# text RU: Я хочу найти шоу Вечер с Владимиром Соловьевым .
+# intent: SearchCreativeWork
+# slots: 14:16:object_type, 18:46:object_name
+1	Я	SearchCreativeWork	O
+2	хочу	SearchCreativeWork	O
+3	найти	SearchCreativeWork	O
+4	шоу	SearchCreativeWork	B-object_type
+5	Вечер	SearchCreativeWork	B-object_name
+6	с	SearchCreativeWork	I-object_name
+7	Владимиром	SearchCreativeWork	I-object_name
+8	Соловьевым	SearchCreativeWork	I-object_name
+9	.	SearchCreativeWork	O
+
+# id: valid_206_10
+# text EN: Show me the TV show Segodnya vecherom 
+# text RU: Покажи мне телешоу Сегодня вечером
+# intent: SearchCreativeWork
+# slots: 12:18:object_type, 20:34:object_name
+1	Покажи	SearchCreativeWork	O
+2	мне	SearchCreativeWork	O
+3	телешоу	SearchCreativeWork	B-object_type
+4	Сегодня	SearchCreativeWork	B-object_name
+5	вечером	SearchCreativeWork	I-object_name
+
+# id: valid_262_10
+# text EN: Find a TV series called KHolostyak . 
+# text RU: Найди ТВ шоу под названием Холостяк .
+# intent: SearchCreativeWork
+# slots: 7:12:object_type, 28:35:object_name
+1	Найди	SearchCreativeWork	O
+2	ТВ	SearchCreativeWork	B-object_type
+3	шоу	SearchCreativeWork	I-object_type
+4	под	SearchCreativeWork	O
+5	названием	SearchCreativeWork	O
+6	Холостяк	SearchCreativeWork	B-object_name
+7	.	SearchCreativeWork	O
+
+# id: valid_262_11
+# text EN: Find a TV series called Comedy Woman . 
+# text RU: Найди ТВ шоу под названием Comedy Woman .
+# intent: SearchCreativeWork
+# slots: 7:12:object_type, 28:39:object_name
+1	Найди	SearchCreativeWork	O
+2	ТВ	SearchCreativeWork	B-object_type
+3	шоу	SearchCreativeWork	I-object_type
+4	под	SearchCreativeWork	O
+5	названием	SearchCreativeWork	O
+6	Comedy	SearchCreativeWork	B-object_name
+7	Woman	SearchCreativeWork	I-object_name
+8	.	SearchCreativeWork	O
+
+# id: valid_206_11
+# text EN: Show me the TV show Sto k odnomu 
+# text RU: Покажи мне телешоу Сто к одному
+# intent: SearchCreativeWork
+# slots: 12:18:object_type, 20:31:object_name
+1	Покажи	SearchCreativeWork	O
+2	мне	SearchCreativeWork	O
+3	телешоу	SearchCreativeWork	B-object_type
+4	Сто	SearchCreativeWork	B-object_name
+5	к	SearchCreativeWork	I-object_name
+6	одному	SearchCreativeWork	I-object_name
+
+# id: valid_262_12
+# text EN: Find a TV series called +100500 . 
+# text RU: Найди ТВ шоу под названием +100500 .
+# intent: SearchCreativeWork
+# slots: 7:12:object_type, 28:34:object_name
+1	Найди	SearchCreativeWork	O
+2	ТВ	SearchCreativeWork	B-object_type
+3	шоу	SearchCreativeWork	I-object_type
+4	под	SearchCreativeWork	O
+5	названием	SearchCreativeWork	O
+6	+100500	SearchCreativeWork	B-object_name
+7	.	SearchCreativeWork	O
+
+# id: valid_252_14
+# text EN: I want to find the show Bitva ekstrasensov . 
+# text RU: Я хочу найти шоу Битва экстрасенсов .
+# intent: SearchCreativeWork
+# slots: 14:16:object_type, 18:35:object_name
+1	Я	SearchCreativeWork	O
+2	хочу	SearchCreativeWork	O
+3	найти	SearchCreativeWork	O
+4	шоу	SearchCreativeWork	B-object_type
+5	Битва	SearchCreativeWork	B-object_name
+6	экстрасенсов	SearchCreativeWork	I-object_name
+7	.	SearchCreativeWork	O
+
+# id: valid_252_15
+# text EN: I want to find the show Lednikovyy period . 
+# text RU: Я хочу найти шоу Ледниковый Период .
+# intent: SearchCreativeWork
+# slots: 14:16:object_type, 18:34:object_name
+1	Я	SearchCreativeWork	O
+2	хочу	SearchCreativeWork	O
+3	найти	SearchCreativeWork	O
+4	шоу	SearchCreativeWork	B-object_type
+5	Ледниковый	SearchCreativeWork	B-object_name
+6	Период	SearchCreativeWork	I-object_name
+7	.	SearchCreativeWork	O
+
+# id: valid_262_13
+# text EN: Find a TV series called Neputevye zametki . 
+# text RU: Найди ТВ шоу под названием Непутёвые Заметки .
+# intent: SearchCreativeWork
+# slots: 7:12:object_type, 28:44:object_name
+1	Найди	SearchCreativeWork	O
+2	ТВ	SearchCreativeWork	B-object_type
+3	шоу	SearchCreativeWork	I-object_type
+4	под	SearchCreativeWork	O
+5	названием	SearchCreativeWork	O
+6	Непутёвые	SearchCreativeWork	B-object_name
+7	Заметки	SearchCreativeWork	I-object_name
+8	.	SearchCreativeWork	O
+
+# id: valid_252_16
+# text EN: I want to find the show Reshala . 
+# text RU: Я хочу найти шоу Решала .
+# intent: SearchCreativeWork
+# slots: 14:16:object_type, 18:23:object_name
+1	Я	SearchCreativeWork	O
+2	хочу	SearchCreativeWork	O
+3	найти	SearchCreativeWork	O
+4	шоу	SearchCreativeWork	B-object_type
+5	Решала	SearchCreativeWork	B-object_name
+6	.	SearchCreativeWork	O
+
+# id: valid_206_12
+# text EN: Show me the TV show Gorodok 
+# text RU: Покажи мне телешоу Городок
+# intent: SearchCreativeWork
+# slots: 12:18:object_type, 20:26:object_name
+1	Покажи	SearchCreativeWork	O
+2	мне	SearchCreativeWork	O
+3	телешоу	SearchCreativeWork	B-object_type
+4	Городок	SearchCreativeWork	B-object_name
+
+# id: valid_206_13
+# text EN: Show me the TV show Poka vse doma 
+# text RU: Покажи мне телешоу Пока все Дома
+# intent: SearchCreativeWork
+# slots: 12:18:object_type, 1:32:object_name
+1	Покажи	SearchCreativeWork	O
+2	мне	SearchCreativeWork	O
+3	телешоу	SearchCreativeWork	B-object_type
+4	Пока	SearchCreativeWork	B-object_name
+5	все	SearchCreativeWork	I-object_name
+6	Дома	SearchCreativeWork	I-object_name
+
+# id: valid_206_14
+# text EN: Show me the TV show Sudba cheloveka 
+# text RU: Покажи мне телешоу Судьба человека
+# intent: SearchCreativeWork
+# slots: 12:18:object_type, 20:34:object_name
+1	Покажи	SearchCreativeWork	O
+2	мне	SearchCreativeWork	O
+3	телешоу	SearchCreativeWork	B-object_type
+4	Судьба	SearchCreativeWork	B-object_name
+5	человека	SearchCreativeWork	I-object_name
+
+# id: valid_226_8
+# text EN: Find a trailer called KHokkeynye papy . 
+# text RU: Найди трейлер под названием Хоккейные Папы .
+# intent: SearchCreativeWork
+# slots: 7:13:object_type, 29:42:object_name
+1	Найди	SearchCreativeWork	O
+2	трейлер	SearchCreativeWork	B-object_type
+3	под	SearchCreativeWork	O
+4	названием	SearchCreativeWork	O
+5	Хоккейные	SearchCreativeWork	B-object_name
+6	Папы	SearchCreativeWork	I-object_name
+
+# id: valid_220_1
+# text EN: Show me Trener . 
+# text RU: Покажи мне Тренера .
+# intent: SearchCreativeWork
+# slots: 12:18:object_name
+1	Покажи	SearchCreativeWork	O
+2	мне	SearchCreativeWork	O
+3	Тренера	SearchCreativeWork	B-object_name
+4	.	SearchCreativeWork	O
+
+# id: valid_226_9
+# text EN: Find a trailer called Kukhnya. Poslednyaya bitva . 
+# text RU: Найди трейлер под названием Кухня. Последняя Битва .
+# intent: SearchCreativeWork
+# slots: 7:13:object_type, 29:50:object_name
+1	Найди	SearchCreativeWork	O
+2	трейлер	SearchCreativeWork	B-object_type
+3	под	SearchCreativeWork	O
+4	названием	SearchCreativeWork	O
+5	Кухня.	SearchCreativeWork	B-object_name
+6	Последняя	SearchCreativeWork	I-object_name
+7	Битва	SearchCreativeWork	I-object_name
+
+# id: valid_226_10
+# text EN: Find a trailer called 14+ . 
+# text RU: Найди трейлер под названием 14+ .
+# intent: SearchCreativeWork
+# slots: 7:13:object_type, 29:31:object_name
+1	Найди	SearchCreativeWork	O
+2	трейлер	SearchCreativeWork	B-object_type
+3	под	SearchCreativeWork	O
+4	названием	SearchCreativeWork	O
+5	14+	SearchCreativeWork	B-object_name
+
+# id: valid_226_11
+# text EN: Find a trailer called Kukhnya v Parizhe . 
+# text RU: Найди трейлер под названием Кухня в Париже .
+# intent: SearchCreativeWork
+# slots: 7:13:object_type, 29:42:object_name
+1	Найди	SearchCreativeWork	O
+2	трейлер	SearchCreativeWork	B-object_type
+3	под	SearchCreativeWork	O
+4	названием	SearchCreativeWork	O
+5	Кухня	SearchCreativeWork	B-object_name
+6	в	SearchCreativeWork	I-object_name
+7	Париже	SearchCreativeWork	I-object_name
