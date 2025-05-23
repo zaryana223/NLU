@@ -411,7 +411,7 @@
 2	Преступление	RateBook	B-object_name
 3	и	RateBook	I-object_name
 4	наказание	RateBook	I-object_name
-5	на
+5	на	RateBook	O
 6	три	RateBook	B-rating_value
 7	из	RateBook	O
 8	6	RateBook	B-best_rating
@@ -494,7 +494,6 @@
 2	хочу	SearchScreeningEvent	O
 3	анимационные	SearchScreeningEvent	B-movie_type
 4	фильмы	SearchScreeningEvent	I-movie_type
-5	в	SearchScreeningEvent	O
 6	КАРО	SearchScreeningEvent	B-location
 7	7	SearchScreeningEvent	I-location
 8	Атриум	SearchScreeningEvent	I-location
@@ -682,7 +681,7 @@
 1	Можешь	SearchCreativeWork	O
 2	найти	SearchCreativeWork	O
 3	книгу	SearchCreativeWork	B-object_type
-4	,	SearchCreativeWork
+4	,	SearchCreativeWork	O
 5	Горе	SearchCreativeWork	B-object_name
 6	от	SearchCreativeWork	I-object_name
 7	ума	SearchCreativeWork	I-object_name
@@ -1328,11 +1327,11 @@
 # text EN: when is hotter weather expected in Losiny Ostrov National Park  
 # text RU: когда ожидается более жаркая погода в национальном парке Лосиный остров 
 # intent: weather/find
-# slots: 17:28:condition_temperature, 39:71:location
+# slots: 23:28:condition_temperature, 39:71:location
 1	когда	weather/find	O
 2	ожидается	weather/find	O
-3	более	weather/find	B-condition_temperature
-4	жаркая	weather/find	I-condition_temperature
+3	более	weather/find	O
+4	жаркая	weather/find	B-condition_temperature
 5	погода	weather/find	O
 6	в	weather/find	O
 7	национальном	weather/find	B-location
@@ -1574,7 +1573,7 @@
 8	Советская	AddToPlaylist	B-playlist
 9	музыка	AddToPlaylist	I-playlist
 
-# id: test_369 
+# id: test_369_2
 # text EN: Book me a reservation for the best bar 
 # text RU: Забронируй мне столик в лучшем баре
 # intent: BookRestaurant
@@ -1586,7 +1585,7 @@
 5	лучшем	BookRestaurant	B-sort
 6	баре	BookRestaurant	B-restaurant_type
 
-# id: test_372 
+# id: test_372_1 
 # text EN: What will the weather be in Grozny ? 
 # text RU: Какая будет погода в Грозном ?
 # intent: weather/find
@@ -1598,7 +1597,7 @@
 5	Грозном	weather/find	B-location
 6	?	weather/find	O
 
-# id: test_374 
+# id: test_374_1 
 # text EN: Book a reservation for me and my babies 
 # text RU: Забронируй столик для нас с малышами
 # intent: BookRestaurant
@@ -1800,7 +1799,7 @@
 4	2013	PlayMusic	B-datetime
 5	.	PlayMusic	O
 
-# id: test_369
+# id: test_369_1
 # text EN: Book me a reservation for the best cafe 
 # text RU: Забронируй мне столик в лучшем кафе
 # intent: BookRestaurant
@@ -1828,16 +1827,16 @@
 # id: test_371
 # text EN: what are the movie times 
 # text RU: какие расписания сеансов 
-# intent: SearchScreeningEven
+# intent: SearchScreeningEvent
 # slots: 7:24:object_type
 1	какие	SearchScreeningEvent	O
 2	расписания	SearchScreeningEvent	B-object_type
 3	сеансов	SearchScreeningEvent	I-object_type
 
-# id: test_372 
+# id: test_372_2
 # text EN: What will the weather be in Kaliningrad? 
 # text RU: Какая погода будет в Калининграде?
-# intent: weather/find 
+# intent: weather/find
 # slots: 22:33:location
 1	Какая	weather/find	O
 2	погода	weather/find	O
@@ -1849,7 +1848,7 @@
 # id: test_373 
 # text EN: Add this artist to Muzyka Russkii Melodram 
 # text RU: Добавь этого исполнителя в Музыку русских мелодрам
-# intent: AddToPlaylist 
+# intent: AddToPlaylist
 # slots: 14:24:music_item, 28:50:playlist
 1	Добавь	AddToPlaylist	O
 2	этого	AddToPlaylist	O
@@ -1859,7 +1858,7 @@
 6	русских	AddToPlaylist	I-playlist
 7	мелодрам	AddToPlaylist	I-playlist
 
-# id: test_374 
+# id: test_374_2 
 # text EN: Book a reservation for me and my babies 
 # text RU: Забронируй столик для нас с малышами
 # intent: BookRestaurant
@@ -2511,7 +2510,7 @@
 # id: test_169  
 # text EN: Is it supposed to rain all day? 
 # text RU: Будет ли дождь идти весь день?
-# intent: weather/find#
+# intent: weather/find
 # slots: 10:14:weather/attribute, 21:29:datetime
 1	Будет	weather/find	O
 2	ли	weather/find	O
@@ -2958,7 +2957,7 @@
 # id: test_209 
 # text EN: What is the high today? 
 # text RU: Какая сегодня максимальная температура?
-# intent: weather/find  
+# intent: weather/find
 # slots: 7:13:datetime, 15:38:weather/attribute
 1	Какая	weather/find	O
 2	сегодня	weather/find	B-datetime
@@ -3179,7 +3178,7 @@
 
 # id: test_230
 # text EN: What time is left on the alarm. 
-# text RU: Сколько времени осталость до будильника.
+# text RU: Сколько времени осталось до будильника.
 # intent: alarm/time_left_on_alarm
 # slots: 
 1	Сколько	alarm/time_left_on_alarm	O
@@ -4920,13 +4919,13 @@
 
 # id: test_291_4
 # text EN: Will Manyunya be playing at 7 PM ? 
-# text RU: Будут ли показывать Манюня в 7 вечера ?
+# text RU: Будут ли показывать Манюню в 7 вечера ?
 # intent: SearchScreeningEvent
 # slots: 21:26:movie_name, 30:37:datetime
 1	Будут	SearchScreeningEvent	O
 2	ли	SearchScreeningEvent	O
 3	показывать	SearchScreeningEvent	O
-4	Манюня	SearchScreeningEvent	B-movie_name
+4	Манюню	SearchScreeningEvent	B-movie_name
 5	в	SearchScreeningEvent	O
 6	7	SearchScreeningEvent	B-datetime
 7	вечера	SearchScreeningEvent	I-datetime
@@ -5106,7 +5105,7 @@
 7	мая	weather/find	I-datetime
 8	?	weather/find	O
 
-# id: test_372_1
+# id: test_372_3
 # text EN: What will the weather be in Adygeysk? 
 # text RU: Какая погода будет в Адыгейске?
 # intent: weather/find
@@ -5122,11 +5121,11 @@
 # text EN: when is hotter weather expected in Aznakaevo  
 # text RU: когда ожидается более жаркая погода в Азнакаеве
 # intent: weather/find
-# slots: 17:28:condition_temperature, 39:47:location
+# slots: 23:28:condition_temperature, 39:47:location
 1	когда	weather/find	O
 2	ожидается	weather/find	O
-3	более	weather/find	B-condition_temperature
-4	жаркая	weather/find	I-condition_temperature
+3	более	weather/find	O
+4	жаркая	weather/find	B-condition_temperature
 5	погода	weather/find	O
 6	в	weather/find	O
 7	Азнакаеве	weather/find	B-location
@@ -5260,11 +5259,11 @@
 # text EN: when is hotter weather expected in Aleksandrov  
 # text RU: когда ожидается более жаркая погода в Александрове
 # intent: weather/find
-# slots: 17:28:condition_temperature, 39:50:location
+# slots: 23:28:condition_temperature, 39:50:location
 1	когда	weather/find	O
 2	ожидается	weather/find	O
-3	более	weather/find	B-condition_temperature
-4	жаркая	weather/find	I-condition_temperature
+3	более	weather/find	O
+4	жаркая	weather/find	B-condition_temperature
 5	погода	weather/find	O
 6	в	weather/find	O
 7	Александрове	weather/find	B-location
