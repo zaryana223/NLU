@@ -2423,7 +2423,7 @@
 9	Михайловске	BookRestaurant	B-location
 10	.	BookRestaurant	O
 
-# id: test_481 
+# id: test_481_1
 # text EN: Play some russian rock . 
 # text RU: Включи русский рок .
 # intent: PlayMusic
