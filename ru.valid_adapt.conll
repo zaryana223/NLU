@@ -466,7 +466,7 @@
 2	столик	BookRestaurant	O
 3	для	BookRestaurant	O
 4	одного	BookRestaurant	B-party_size_number
-5	человек	BookRestaurant	O
+5	человека	BookRestaurant	O
 6	в	BookRestaurant	O
 7	популярном	BookRestaurant	B-sort
 8	стейкхаусе	BookRestaurant	B-restaurant_type
@@ -949,9 +949,9 @@
 
 # id: valid_270
 # text EN: rate the current novel 0 of 6 
-# text RU: оцени текущий роман 0 из 6
+# text RU: оцени текущий роман на 0 из 6
 # intent: RateBook
-# slots: 7:13:object_select, 15:19:object_type, 21:21:rating_value, 26:26:best_rating
+# slots: 7:13:object_select, 15:19:object_type, 24:24:rating_value, 29:29:best_rating
 1	оцени	RateBook	O
 2	текущий	RateBook	B-object_select
 3	роман	RateBook	B-object_type
@@ -1565,7 +1565,7 @@
 # text RU: Переставь завтрашний будильник на 6 утра.
 # intent: alarm/modify_alarm
 # slots: 11:20:datetime, 35:40:datetime
-1	Измени	alarm/modify_alarm	O
+1	Переставь	alarm/modify_alarm	O
 2	завтрашний	alarm/modify_alarm	B-datetime
 3	будильник	alarm/modify_alarm	O
 4	на	alarm/modify_alarm	O
@@ -1610,7 +1610,7 @@
 3	на	alarm/set_alarm	O
 4	завтра	alarm/set_alarm	B-datetime
 5	в	alarm/set_alarm	I-datetime
-6	7	alarm/set_alarm	I-datetime
+6	6	alarm/set_alarm	I-datetime
 7	утра	alarm/set_alarm	I-datetime
 
 # id: valid_22
@@ -2756,7 +2756,7 @@
 
 # id: valid_127
 # text EN: should I bring an umbrella today
-# text RU: должен ли я взать зонт сегодня
+# text RU: должен ли я взять зонт сегодня
 # intent: weather/find
 # slots: 19:22:weather/attribute, 24:30:datetime
 1	должен	weather/find	O
@@ -2797,7 +2797,7 @@
 # slots: 7:9:reference
 1	Удали	reminder/cancel_reminder	O
 2	все	reminder/cancel_reminder	B-reference
-3	напоминия	reminder/cancel_reminder	O
+3	напоминания	reminder/cancel_reminder	O
 
 # id: valid_131
 # text EN: Is it going to rain today?
@@ -2830,12 +2830,11 @@
 # slots: 22:35:reminder/todo, 40:55:datetime
 1	Установи	reminder/set_reminder	O
 2	напоминание	reminder/set_reminder	O
-3	к	reminder/set_reminder	O
-4	навестить	reminder/set_reminder	B-reminder/todo
-5	маму	reminder/set_reminder	I-reminder/todo
-6	на	reminder/set_reminder	O
-7	следующей	reminder/set_reminder	B-datetime
-8	неделе	reminder/set_reminder	I-datetime
+3	навестить	reminder/set_reminder	B-reminder/todo
+4	маму	reminder/set_reminder	I-reminder/todo
+5	на	reminder/set_reminder	O
+6	следующей	reminder/set_reminder	B-datetime
+7	неделе	reminder/set_reminder	I-datetime
 
 # id: valid_134
 # text EN: Will it snow tomorrow?
@@ -2884,13 +2883,13 @@
 # text EN: Remind me to buy coffee at shokoladnitsa this afternoon
 # text RU: Напомни мне купить кофе в шоколаднице после обеда
 # intent: reminder/set_reminder
-# slots: 13:7:reminder/todo, 39:49:datetime
+# slots: 13:37:reminder/todo, 39:49:datetime
 1	Напомни	reminder/set_reminder	O
 2	мне	reminder/set_reminder	O
 3	купить	reminder/set_reminder	B-reminder/todo
 4	кофе	reminder/set_reminder	I-reminder/todo
 5	в	reminder/set_reminder	I-reminder/todo
-6	Старбакс	reminder/set_reminder	I-reminder/todo
+6	шоколаднице	reminder/set_reminder	I-reminder/todo
 7	после	reminder/set_reminder	B-datetime
 8	обеда	reminder/set_reminder	I-datetime
 
@@ -2947,12 +2946,12 @@
 # text EN: Will there be storms in Pevek today
 # text RU: Будет ли шторм в Певеке сегодня
 # intent: weather/find
-# slots: 10:14:weather/attribute, 0:9:location, 25:31:datetime
+# slots: 10:14:weather/attribute, 18:23:location, 25:31:datetime
 1	Будет	weather/find	O
 2	ли	weather/find	O
 3	шторм	weather/find	B-weather/attribute
 4	в	weather/find	O
-5	Бордентаун	weather/find	B-location
+5	Певеке	weather/find	B-location
 6	сегодня	weather/find	B-datetime
 
 # id: valid_143
@@ -3114,10 +3113,10 @@
 # text EN: me and maria want a reservation in AnderSon at seven am
 # text RU: я и Маша хотим столик в АндерСон в семь утра
 # intent: BookRestaurant
-# slots: 1:6:party_size_description, 25:32:location, 36:44:datetime
+# slots: 1:8:party_size_description, 25:32:location, 36:44:datetime
 1	я	BookRestaurant	B-party_size_description
 2	и	BookRestaurant	I-party_size_description
-3	Имельда	BookRestaurant	I-party_size_description
+3	Маша	BookRestaurant	I-party_size_description
 4	хотим	BookRestaurant	O
 5	столик	BookRestaurant	O
 6	в	BookRestaurant	O
@@ -3305,10 +3304,10 @@
 # text EN: book near Kazan restaurant serving russian food for 6 that is highly rated on tues.
 # text RU: забронируй около Казани ресторан, подающий русскую кухню на 6-х, который высоко оценен, на вторник.
 # intent: BookRestaurant
-# slots: 12:16:location, 0:6:location, 25:32:restaurant_type, 44:50:cuisine, 61:63:party_size_number, 74:86:sort, 92:99:datetime
+# slots: 12:16:location, 18:23:location, 25:32:restaurant_type, 44:50:cuisine, 61:63:party_size_number, 74:86:sort, 92:99:datetime
 1	забронируй	BookRestaurant	O
 2	около	BookRestaurant	B-location
-3	Монтаны	BookRestaurant	B-location
+3	Казани	BookRestaurant	B-location
 4	ресторан	BookRestaurant	B-restaurant_type
 5	,	BookRestaurant	O
 6	подающий	BookRestaurant	O
@@ -3468,10 +3467,10 @@
 7	.	PlayMusic	O
 
 # id: valid_181
-# text EN: play the album Everybody Happy by Lee Aaron
-# text RU: включи альбом Плохие Привычки 
+# text EN: play the album Bad Habits by Scriptonite
+# text RU: включи альбом Плохие Привычки от Скриптонита
 # intent: PlayMusic
-# slots: 8:13:music_item, 15:29:album, 0:10:artist
+# slots: 8:13:music_item, 15:29:album, 34:44:artist
 1	включи	PlayMusic	O
 2	альбом	PlayMusic	B-music_item
 3	Плохие	PlayMusic	B-album
@@ -3548,15 +3547,15 @@
 
 # id: valid_187
 # text EN: Play a tune by lazarev on Yandex Music
-# text RU: Включи мелодии лазарев на Яндекс Музыка
+# text RU: Включи мелодии лазарев на Яндекс Музыке
 # intent: PlayMusic
-# slots: 8:14:music_item, 16:22:artist, 0:39:service
+# slots: 8:14:music_item, 16:22:artist, 27:39:service
 1	Включи	PlayMusic	O
 2	мелодии	PlayMusic	B-music_item
 3	лазарев	PlayMusic	B-artist
 4	на	PlayMusic	O
-5	Yandex	PlayMusic	B-service
-6	Музыка	PlayMusic	I-service
+5	Яндекс	PlayMusic	B-service
+6	Музыке	PlayMusic	I-service
 
 # id: valid_188
 # text EN: find a movie theatre with Life and Death
@@ -3599,16 +3598,15 @@
 11	сашими	BookRestaurant	B-served_dish
 
 # id: valid_191
-# text EN: find animated movies at Caribbean Cinemas
-# text RU: найди анимационные фильмы в Caribbean Cinemas
+# text EN: find animated movies at Kinomax
+# text RU: найди анимационные фильмы в Киномаксе
 # intent: SearchScreeningEvent
-# slots: 7:25:movie_type, 29:45:location
+# slots: 7:25:movie_type, 29:37:location
 1	найди	SearchScreeningEvent	O
 2	анимационные	SearchScreeningEvent	B-movie_type
 3	фильмы	SearchScreeningEvent	I-movie_type
 4	в	SearchScreeningEvent	O
-5	Caribbean	SearchScreeningEvent	B-location
-6	Cinemas	SearchScreeningEvent	I-location
+5	Киномаксе	SearchScreeningEvent	B-location
 
 # id: valid_192
 # text EN: Will there be a storm nearby
@@ -3677,24 +3675,23 @@
 # text EN: Find me Taynoye vlecheniye playing at Kinomax in 2 minutes
 # text RU: Найди мне показ Тайное влечение в Киномаксе через 2 минуты
 # intent: SearchScreeningEvent
-# slots: 0:7:movie_name, 0:9:location, 45:58:datetime
+# slots: 17:31:movie_name, 35:43:location, 45:58:datetime
 1	Найди	SearchScreeningEvent	O
 2	мне	SearchScreeningEvent	O
 3	показ	SearchScreeningEvent	O
-4	The	SearchScreeningEvent	B-movie_name
-5	Twinkler	SearchScreeningEvent	I-movie_name
+4	Тайное	SearchScreeningEvent	B-movie_name
+5	влечение	SearchScreeningEvent	I-movie_name
 6	в	SearchScreeningEvent	O
-7	National	SearchScreeningEvent	B-location
-8	Amusements	SearchScreeningEvent	I-location
-9	через	SearchScreeningEvent	B-datetime
-10	2	SearchScreeningEvent	I-datetime
-11	минуты	SearchScreeningEvent	I-datetime
+7	Киномаксе	SearchScreeningEvent	B-location
+8	через	SearchScreeningEvent	B-datetime
+9	2	SearchScreeningEvent	I-datetime
+10	минуты	SearchScreeningEvent	I-datetime
 
 # id: valid_198
 # text EN: I give War and Peace two out of 6 points
 # text RU: Я дам Войне и миру два из 6 баллов
 # intent: RateBook
-# slots: 7:18:object_name, 20:22:rating_value, 27:27:best_rating, 0:5:rating_unit
+# slots: 7:18:object_name, 20:22:rating_value, 27:27:best_rating, 29:34:rating_unit
 1	Я	RateBook	O
 2	дам	RateBook	O
 3	Войне	RateBook	B-object_name
@@ -3703,7 +3700,7 @@
 6	два	RateBook	B-rating_value
 7	из	RateBook	O
 8	6	RateBook	B-best_rating
-9	points	RateBook	B-rating_unit
+9	баллов	RateBook	B-rating_unit
 
 # id: valid_199
 # text EN: I'm looking to bring Alice, Andrey and Katya to a place to eat at near Pleteshkovskaya .
